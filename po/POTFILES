@@ -1,0 +1,6 @@
+data/com.oyajun.ColorCode.desktop.in
+data/com.oyajun.ColorCode.metainfo.xml.in
+data/com.oyajun.ColorCode.gschema.xml
+src/main.py
+src/window.py
+src/window.ui

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="color-code">
+	<schema id="com.oyajun.ColorCode" path="/com/oyajun/ColorCode/">
+	</schema>
+</schemalist>
