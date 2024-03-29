@@ -17,12 +17,81 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
       }
     }
 
-    content: Label label {
-      label: 'Hello, World!';
+    content: Box {
+      halign: center;
+      valign: center;
 
-      styles [
-        "title-1",
-      ]
+      DropDown test_drop {
+      }
+
+      DropDown first_drop_down {
+        model: StringList {
+          strings [
+            "⬛ Black",
+            "🟫 Brown",
+            "🟥 Red",
+            "🟧 Orange",
+            "🟨 Yellow",
+            "🟩 Green",
+            "🟦 Blue",
+            "🟪 Violet",
+            "👽 Gray",
+            "⬜ White"
+          ]
+        };
+      }
+
+      DropDown second_drop_down {
+        model: StringList {
+          strings [
+            "⬛ Black",
+            "🟫 Brown",
+            "🟥 Red",
+            "🟧 Orange",
+            "🟨 Yellow",
+            "🟩 Green",
+            "🟦 Blue",
+            "🟪 Violet",
+            "👽 Gray",
+            "⬜ White"
+          ]
+        };
+      }
+
+      DropDown third_drop_down {
+        model: StringList {
+          strings [
+            "⬛ Black",
+            "🟫 Brown",
+            "🟥 Red",
+            "🟧 Orange",
+            "🟨 Yellow",
+            "🟩 Green",
+            "🟦 Blue",
+            "🟪 Violet",
+            "👽 Gray",
+            "⬜ White",
+            "🥇 Gold",
+            "🥈 Silver"
+          ]
+        };
+      }
+
+      DropDown fourth_drop_down {
+        model: StringList {
+          strings [
+            "🟫 Brown",
+            "🟥 Red",
+            "🟧 Orange",
+            "🟩 Green",
+            "🟦 Blue",
+            "🟪 Violet",
+            "🥇 Gold",
+            "🥈 Silver"
+          ]
+        };
+      }
+
     };
   };
 }
