@@ -27,10 +27,11 @@
             "name" : "color-code",
             "builddir" : true,
             "buildsystem" : "meson",
+            "run-tests" : true,
             "sources" : [
                 {
-                    "type" : "git",
-                    "url" : "file:///home/jun/Projects"
+                    "type" : "dir",
+                    "path" : "./"
                 }
             ]
         }
