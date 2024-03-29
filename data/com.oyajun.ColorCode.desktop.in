@@ -1,8 +1,8 @@
 [Desktop Entry]
-Name=color-code
+Name=Color Code
 Exec=color-code
 Icon=com.oyajun.ColorCode
 Terminal=false
 Type=Application
-Categories=GTK;
+Categories=GTK;Utility;
 StartupNotify=true
