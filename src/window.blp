@@ -4,6 +4,7 @@ using Adw 1;
 template $ColorCodeWindow: Adw.ApplicationWindow {
   default-width: 600;
   default-height: 300;
+  title: "Color Code";
 
   content: Adw.ToolbarView {
     [top]
@@ -20,76 +21,22 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
     content: Box {
       halign: center;
       valign: center;
+      spacing: 10;
 
-      DropDown test_drop {
+      DropDown drop_down_1 {
+        width-request: 120;
       }
 
-      DropDown first_drop_down {
-        model: StringList {
-          strings [
-            "⬛ Black",
-            "🟫 Brown",
-            "🟥 Red",
-            "🟧 Orange",
-            "🟨 Yellow",
-            "🟩 Green",
-            "🟦 Blue",
-            "🟪 Violet",
-            "👽 Gray",
-            "⬜ White"
-          ]
-        };
+      DropDown drop_down_2 {
+        width-request: 120;
       }
 
-      DropDown second_drop_down {
-        model: StringList {
-          strings [
-            "⬛ Black",
-            "🟫 Brown",
-            "🟥 Red",
-            "🟧 Orange",
-            "🟨 Yellow",
-            "🟩 Green",
-            "🟦 Blue",
-            "🟪 Violet",
-            "👽 Gray",
-            "⬜ White"
-          ]
-        };
+      DropDown drop_down_3 {
+        width-request: 120;
       }
 
-      DropDown third_drop_down {
-        model: StringList {
-          strings [
-            "⬛ Black",
-            "🟫 Brown",
-            "🟥 Red",
-            "🟧 Orange",
-            "🟨 Yellow",
-            "🟩 Green",
-            "🟦 Blue",
-            "🟪 Violet",
-            "👽 Gray",
-            "⬜ White",
-            "🥇 Gold",
-            "🥈 Silver"
-          ]
-        };
-      }
-
-      DropDown fourth_drop_down {
-        model: StringList {
-          strings [
-            "🟫 Brown",
-            "🟥 Red",
-            "🟧 Orange",
-            "🟩 Green",
-            "🟦 Blue",
-            "🟪 Violet",
-            "🥇 Gold",
-            "🥈 Silver"
-          ]
-        };
+      DropDown drop_down_4 {
+        width-request: 120;
       }
 
     };

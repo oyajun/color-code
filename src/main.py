@@ -51,7 +51,7 @@ class ColorCodeApplication(Adw.Application):
     def on_about_action(self, widget, _):
         """Callback for the app.about action."""
         about = Adw.AboutWindow(transient_for=self.props.active_window,
-                                application_name='color-code',
+                                application_name='Color Code',
                                 application_icon='com.oyajun.ColorCode',
                                 developer_name='jun',
                                 version='0.1.0',

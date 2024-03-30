@@ -23,20 +23,22 @@ from gi.repository import Adw, Gtk, Gio, GObject
 class ColorCodeWindow(Adw.ApplicationWindow):
     __gtype_name__ = 'ColorCodeWindow'
 
-    test_drop = Gtk.Template.Child()
+    drop_down_1 = Gtk.Template.Child()
+    drop_down_2 = Gtk.Template.Child()
+    drop_down_3 = Gtk.Template.Child()
+    drop_down_4 = Gtk.Template.Child()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
         list_store_expression = Gtk.PropertyExpression.new(
-                KeyValuePair,
-                None,
-                "value",
+            KeyValuePair,
+            None,
+            "value",
         )
 
-
-        model = Gio.ListStore(item_type=KeyValuePair)
-        model.splice(
+        value_model = Gio.ListStore(item_type=KeyValuePair)
+        value_model.splice(
             0, 0,
             [
                 KeyValuePair(key=0, value="⬛ Black"),
@@ -47,30 +49,85 @@ class ColorCodeWindow(Adw.ApplicationWindow):
                 KeyValuePair(key=5, value="🟩 Green"),
                 KeyValuePair(key=6, value="🟦 Blue"),
                 KeyValuePair(key=7, value="🟪 Violet"),
-                KeyValuePair(key=8, value="👽 Gray"),
+                KeyValuePair(key=8, value="🩶 Gray"),
                 KeyValuePair(key=9, value="⬜ White"),
             ],
         )
 
-        list_store_expression = Gtk.PropertyExpression.new(
-            KeyValuePair,
-            None,
-            "value",
+        multiplier_model = Gio.ListStore(item_type=KeyValuePair)
+        multiplier_model.splice(
+            0, 0,
+            [
+                KeyValuePair(key=0, value="⬛ Black"),
+                KeyValuePair(key=1, value="🟫 Brown"),
+                KeyValuePair(key=2, value="🟥 Red"),
+                KeyValuePair(key=3, value="🟧 Orange"),
+                KeyValuePair(key=4, value="🟨 Yellow"),
+                KeyValuePair(key=5, value="🟩 Green"),
+                KeyValuePair(key=6, value="🟦 Blue"),
+                KeyValuePair(key=7, value="🟪 Violet"),
+                KeyValuePair(key=8, value="🩶 Gray"),
+                KeyValuePair(key=9, value="⬜ White"),
+                KeyValuePair(key=-1, value="🥇 Gold"),
+                KeyValuePair(key=-2, value="🥈 Silver"),
+                KeyValuePair(key=-3, value="🩷 Pink"),
+            ],
         )
 
-        self.test_drop.set_expression(list_store_expression)
-        self.test_drop.set_model(model)
+        tolerance_model = Gio.ListStore(item_type=KeyValuePair)
+        tolerance_model.splice(
+            0, 0,
+            [
+                KeyValuePair(key=1, value="🟫 Brown"),
+                KeyValuePair(key=2, value="🟥 Red"),
+                KeyValuePair(key=0.05, value="🟧 Orange"),
+                KeyValuePair(key=0.5, value="🟩 Green"),
+                KeyValuePair(key=0.25, value="🟦 Blue"),
+                KeyValuePair(key=0.1, value="🟪 Violet"),
+                KeyValuePair(key=5, value="🥇 Gold"),
+                KeyValuePair(key=10, value="🥈 Silver"),
+            ],
+        )
 
-        self.test_drop.connect("notify::selected-item", self.on_advanced_selected_item)
+        self.drop_down_1.set_expression(list_store_expression)
+        self.drop_down_2.set_expression(list_store_expression)
+        self.drop_down_3.set_expression(list_store_expression)
+        self.drop_down_4.set_expression(list_store_expression)
 
-    def on_advanced_selected_item(self, _drop_down, _selected_item):
+        self.drop_down_1.set_model(value_model)
+        self.drop_down_2.set_model(value_model)
+        self.drop_down_3.set_model(multiplier_model)
+        self.drop_down_4.set_model(tolerance_model)
+
+        self.drop_down_1.connect("notify::selected-item", self.on_selected_item)
+        self.drop_down_2.connect("notify::selected-item", self.on_selected_item)
+        self.drop_down_3.connect("notify::selected-item", self.on_selected_item)
+        self.drop_down_4.connect("notify::selected-item", self.on_selected_item)
+
+        self.calculate()
+
+    def on_selected_item(self, _drop_down, _selected_item):
         selected_item = _drop_down.get_selected_item()
-        if selected_item:
-            print(selected_item.key)
+        #if selected_item:
+            #print(selected_item.key)
+
+        self.calculate()
+
+
+    def calculate(self):
+        value1 = self.drop_down_1.get_selected_item().key
+        value2 = self.drop_down_2.get_selected_item().key
+        multiplier = self.drop_down_3.get_selected_item().key
+        tolerance = self.drop_down_4.get_selected_item().key
+
+        value = (value1 * 10 + value2) * 10 ** multiplier
+        print(value)
+        # × U+00D7
+        print(f"{value1 * 10 + value2} × 10^{int(multiplier)} ±{tolerance} %")
 
 class KeyValuePair(GObject.Object):
     key = GObject.Property(
-        type=int,
+        type=float,
         flags=GObject.ParamFlags.READWRITE,
     )
     value = GObject.Property(
