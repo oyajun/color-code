@@ -53,10 +53,10 @@ class ColorCodeApplication(Adw.Application):
         about = Adw.AboutWindow(transient_for=self.props.active_window,
                                 application_name='Color Code',
                                 application_icon='com.oyajun.ColorCode',
-                                developer_name='jun',
+                                developer_name='oyajun',
                                 version='0.1.0',
-                                developers=['jun'],
-                                copyright='© 2024 jun')
+                                developers=['oyajun'],
+                                copyright='© 2024 oyajun')
         about.present()
 
     def on_preferences_action(self, widget, _):
