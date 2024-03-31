@@ -111,6 +111,12 @@ class ColorCodeWindow(Adw.ApplicationWindow):
         self.drop_down_3.connect("notify::selected-item", self.on_selected_item)
         self.drop_down_4.connect("notify::selected-item", self.on_selected_item)
 
+        # init
+        self.drop_down_1.set_selected(1)
+        self.drop_down_2.set_selected(0)
+        self.drop_down_3.set_selected(2)
+        self.drop_down_4.set_selected(6)
+
         self.calculate()
 
         self.copy_button.connect('clicked', self.copy_text)
@@ -171,3 +177,4 @@ class KeyValuePair(GObject.Object):
         flags=GObject.ParamFlags.READWRITE,
         default="",
     )
+
