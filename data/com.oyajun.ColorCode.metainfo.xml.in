@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <name>Color Code</name>
-  <summary>Calculate resistance from color codes</summary>
+  <name>Color Code to Resistance Value</name>
+  <summary>Color Code to </summary>
 	<id>com.oyajun.ColorCode.desktop</id>
+  <developer>
+    <name>oyajun</name>
+  </developer>
+  <screenshots>
+    <screenshot type="default">
+      <image/>
+      <caption/>
+    </screenshot>
+  </screenshots>
 	<metadata_license>CC0-1.0</metadata_license>
 	<project_license>GPL-3.0-or-later</project_license>
 	<description>
-	  <p/>
+	  <p>
+	    Can't you understand Color Code? This app converts to the resistance value from the color code.
+	  </p>
 	</description>
   <content_rating type="oars-1.1"/>
 </component>
