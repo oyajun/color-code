@@ -1,24 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <name>Color Code to Resistance Value</name>
-  <summary>Color Code to </summary>
-	<id>com.oyajun.ColorCode.desktop</id>
-  <developer>
-    <name>oyajun</name>
-  </developer>
-  <screenshots>
-    <screenshot type="default">
-      <image/>
-      <caption/>
-    </screenshot>
-  </screenshots>
-	<metadata_license>CC0-1.0</metadata_license>
-	<project_license>GPL-3.0-or-later</project_license>
-	<description>
+  <name>Color Code</name>
+  <summary>Color Code to Resistance Value</summary>
+  	<description>
 	  <p>
 	    Can't you understand Color Code? This app converts to the resistance value from the color code.
 	  </p>
 	</description>
+	<id>com.oyajun.ColorCode.desktop</id>
+  <launchable type="desktop-id">com.oyajun.ColorCode.desktop</launchable>
+  <developer id="com.oyajun">
+    <name>oyajun</name>
+  </developer>
+  <url type="homepage">https://https://github.com/oyajun/color-code</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot1.png</image>
+      <caption>The screenshot of "Color Code"</caption>
+    </screenshot>
+  </screenshots>
+  <releases>
+    <release version="0.1.0" date="2024-04-02">
+      <description translate="no">
+        The first release
+      </description>
+    </release>
+  </releases>
+	<metadata_license>CC0-1.0</metadata_license>
+	<project_license>GPL-3.0-or-later</project_license>
   <content_rating type="oars-1.1"/>
 </component>
 
