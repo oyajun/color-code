@@ -1,6 +1,9 @@
-# color-code
+# Color Code
 
-A description of this project.
+"Color Code" is the app converts to the resistance value from the color code.  
+Written with GTK 4 (Python) and libadwaita.
+![image](https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot1.png)
+
 
 # Memo
 ```bash
