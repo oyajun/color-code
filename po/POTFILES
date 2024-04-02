@@ -3,4 +3,5 @@ data/com.oyajun.ColorCode.metainfo.xml.in
 data/com.oyajun.ColorCode.gschema.xml
 src/main.py
 src/window.py
-src/window.ui
+src/window.blp
+src/gtk/help-overlay.blp

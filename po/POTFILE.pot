@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-02 11:55+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: data/com.oyajun.ColorCode.desktop.in:3
+#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/window.blp:7
+msgid "Color Code"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:4
+msgid "Calculate resistance from color codes"
+msgstr ""
+
+#: src/window.py:51 src/window.py:68
+msgid "⬛ Black"
+msgstr ""
+
+#: src/window.py:52 src/window.py:69 src/window.py:88
+msgid "🟫 Brown"
+msgstr ""
+
+#: src/window.py:53 src/window.py:70 src/window.py:89
+msgid "🟥 Red"
+msgstr ""
+
+#: src/window.py:54 src/window.py:71 src/window.py:90
+msgid "🟧 Orange"
+msgstr ""
+
+#: src/window.py:55 src/window.py:72
+msgid "🟨 Yellow"
+msgstr ""
+
+#: src/window.py:56 src/window.py:73 src/window.py:91
+msgid "🟩 Green"
+msgstr ""
+
+#: src/window.py:57 src/window.py:74 src/window.py:92
+msgid "🟦 Blue"
+msgstr ""
+
+#: src/window.py:58 src/window.py:75 src/window.py:93
+msgid "🟪 Violet"
+msgstr ""
+
+#: src/window.py:59 src/window.py:76
+msgid "🩶 Gray"
+msgstr ""
+
+#: src/window.py:60 src/window.py:77
+msgid "⬜ White"
+msgstr ""
+
+#: src/window.py:78 src/window.py:94
+msgid "🥇 Gold"
+msgstr ""
+
+#: src/window.py:79 src/window.py:95
+msgid "🥈 Silver"
+msgstr ""
+
+#: src/window.py:80
+msgid "🩷 Pink"
+msgstr ""
+
+#: src/window.blp:16
+msgid "Menu"
+msgstr ""
+
+#: src/window.blp:40
+msgid "Copy"
+msgstr ""
+
+#: src/window.blp:78
+msgid "_Keyboard Shortcuts"
+msgstr ""
+
+#: src/window.blp:83
+msgid "_About Color Code"
+msgstr ""

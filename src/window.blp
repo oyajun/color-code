@@ -4,7 +4,7 @@ using Adw 1;
 template $ColorCodeWindow: Adw.ApplicationWindow {
   default-width: 600;
   default-height: 300;
-  title: "Color Code";
+  title: _("Color Code");
 
   content: Adw.ToolbarView {
     [top]
@@ -12,8 +12,8 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
       [end]
       MenuButton {
         primary: true;
-        icon-name: 'open-menu-symbolic';
-        tooltip-text: _('Menu');
+        icon-name: "open-menu-symbolic";
+        tooltip-text: _("Menu");
         menu-model: primary_menu;
       }
     }
@@ -30,14 +30,14 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
 
         center-widget: Label result_label {
           width-request: 200;
-          label: "";
           styles [
             "title-1"
           ]
         };
 
         end-widget: Button copy_button {
-          icon-name: 'edit-copy-symbolic';
+          icon-name: "edit-copy-symbolic";
+          tooltip-text: _("Copy");
         };
       }
 
@@ -70,18 +70,18 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
 menu primary_menu {
   section {
     // item {
-    //   label: _('_Preferences');
-    //   action: 'app.preferences';
+    //   label: _("_Preferences");
+    //   action: "app.preferences";
     // }
 
     item {
-      label: _('_Keyboard Shortcuts');
-      action: 'win.show-help-overlay';
+      label: _("_Keyboard Shortcuts");
+      action: "win.show-help-overlay";
     }
 
     item {
-      label: _('_About Color Code');
-      action: 'app.about';
+      label: _("_About Color Code");
+      action: "app.about";
     }
   }
 }

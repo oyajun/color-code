@@ -41,23 +41,23 @@ class ColorCodeWindow(Adw.ApplicationWindow):
         list_store_expression = Gtk.PropertyExpression.new(
             KeyValuePair,
             None,
-            "value",
+            'value',
         )
 
         value_model = Gio.ListStore(item_type=KeyValuePair)
         value_model.splice(
             0, 0,
             [
-                KeyValuePair(key="0", value="⬛ Black"),
-                KeyValuePair(key="1", value="🟫 Brown"),
-                KeyValuePair(key="2", value="🟥 Red"),
-                KeyValuePair(key="3", value="🟧 Orange"),
-                KeyValuePair(key="4", value="🟨 Yellow"),
-                KeyValuePair(key="5", value="🟩 Green"),
-                KeyValuePair(key="6", value="🟦 Blue"),
-                KeyValuePair(key="7", value="🟪 Violet"),
-                KeyValuePair(key="8", value="🩶 Gray"),
-                KeyValuePair(key="9", value="⬜ White"),
+                KeyValuePair(key='0', value=_('⬛ Black')),
+                KeyValuePair(key='1', value=_('🟫 Brown')),
+                KeyValuePair(key='2', value=_('🟥 Red')),
+                KeyValuePair(key='3', value=_('🟧 Orange')),
+                KeyValuePair(key='4', value=_('🟨 Yellow')),
+                KeyValuePair(key='5', value=_('🟩 Green')),
+                KeyValuePair(key='6', value=_('🟦 Blue')),
+                KeyValuePair(key='7', value=_('🟪 Violet')),
+                KeyValuePair(key='8', value=_('🩶 Gray')),
+                KeyValuePair(key='9', value=_('⬜ White')),
             ],
         )
 
@@ -65,19 +65,19 @@ class ColorCodeWindow(Adw.ApplicationWindow):
         multiplier_model.splice(
             0, 0,
             [
-                KeyValuePair(key="0", value="⬛ Black"),
-                KeyValuePair(key="1", value="🟫 Brown"),
-                KeyValuePair(key="2", value="🟥 Red"),
-                KeyValuePair(key="3", value="🟧 Orange"),
-                KeyValuePair(key="4", value="🟨 Yellow"),
-                KeyValuePair(key="5", value="🟩 Green"),
-                KeyValuePair(key="6", value="🟦 Blue"),
-                KeyValuePair(key="7", value="🟪 Violet"),
-                KeyValuePair(key="8", value="🩶 Gray"),
-                KeyValuePair(key="9", value="⬜ White"),
-                KeyValuePair(key="-1", value="🥇 Gold"),
-                KeyValuePair(key="-2", value="🥈 Silver"),
-                KeyValuePair(key="-3", value="🩷 Pink"),
+                KeyValuePair(key='0', value=_('⬛ Black')),
+                KeyValuePair(key='1', value=_('🟫 Brown')),
+                KeyValuePair(key='2', value=_('🟥 Red')),
+                KeyValuePair(key='3', value=_('🟧 Orange')),
+                KeyValuePair(key='4', value=_('🟨 Yellow')),
+                KeyValuePair(key='5', value=_('🟩 Green')),
+                KeyValuePair(key='6', value=_('🟦 Blue')),
+                KeyValuePair(key='7', value=_('🟪 Violet')),
+                KeyValuePair(key='8', value=_('🩶 Gray')),
+                KeyValuePair(key='9', value=_('⬜ White')),
+                KeyValuePair(key='-1', value=_('🥇 Gold')),
+                KeyValuePair(key='-2', value=_('🥈 Silver')),
+                KeyValuePair(key='-3', value=_('🩷 Pink')),
             ],
         )
 
@@ -85,14 +85,14 @@ class ColorCodeWindow(Adw.ApplicationWindow):
         tolerance_model.splice(
             0, 0,
             [
-                KeyValuePair(key="1", value="🟫 Brown"),
-                KeyValuePair(key="2", value="🟥 Red"),
-                KeyValuePair(key="0.05", value="🟧 Orange"),
-                KeyValuePair(key="0.5", value="🟩 Green"),
-                KeyValuePair(key="0.25", value="🟦 Blue"),
-                KeyValuePair(key="0.1", value="🟪 Violet"),
-                KeyValuePair(key="5", value="🥇 Gold"),
-                KeyValuePair(key="10", value="🥈 Silver"),
+                KeyValuePair(key='1', value=_('🟫 Brown')),
+                KeyValuePair(key='2', value=_('🟥 Red')),
+                KeyValuePair(key='0.05', value=_('🟧 Orange')),
+                KeyValuePair(key='0.5', value=_('🟩 Green')),
+                KeyValuePair(key='0.25', value=_('🟦 Blue')),
+                KeyValuePair(key='0.1', value=_('🟪 Violet')),
+                KeyValuePair(key='5', value=_('🥇 Gold')),
+                KeyValuePair(key='10', value=_('🥈 Silver')),
             ],
         )
 
@@ -106,10 +106,10 @@ class ColorCodeWindow(Adw.ApplicationWindow):
         self.drop_down_3.set_model(multiplier_model)
         self.drop_down_4.set_model(tolerance_model)
 
-        self.drop_down_1.connect("notify::selected-item", self.on_selected_item)
-        self.drop_down_2.connect("notify::selected-item", self.on_selected_item)
-        self.drop_down_3.connect("notify::selected-item", self.on_selected_item)
-        self.drop_down_4.connect("notify::selected-item", self.on_selected_item)
+        self.drop_down_1.connect('notify::selected-item', self.on_selected_item)
+        self.drop_down_2.connect('notify::selected-item', self.on_selected_item)
+        self.drop_down_3.connect('notify::selected-item', self.on_selected_item)
+        self.drop_down_4.connect('notify::selected-item', self.on_selected_item)
 
         # init
         self.drop_down_1.set_selected(1)
@@ -134,33 +134,33 @@ class ColorCodeWindow(Adw.ApplicationWindow):
         multiplier = decimal.Decimal(self.drop_down_3.get_selected_item().key)
         tolerance = self.drop_down_4.get_selected_item().key
 
-        value = (value1*10 + value2) * decimal.Decimal("10") ** multiplier
+        value = (value1*10 + value2) * decimal.Decimal('10') ** multiplier
         print(value)
         print(convert_to_MKG(value))
         # × U+00D7
-        value_str = f"{value1*10 + value2} × 10^{multiplier}Ω ±{tolerance}%"
+        value_str = f'{value1*10 + value2} × 10^{multiplier}Ω ±{tolerance}%'
         print(value_str)
-        value_display = f"{convert_to_MKG(value)}Ω ±{tolerance}%"
+        value_display = f'{convert_to_MKG(value)}Ω ±{tolerance}%'
         self.result_label.set_label(str = value_display)
 
 def convert_to_MKG(value):
     if value < 1000:
         return delete_zero(value)
     elif value < 1000000:
-        return delete_zero(value/1000) + "K"
+        return delete_zero(value/1000) + 'K'
     elif value < 1000000000:
-        return delete_zero(value/1000000) + "M"
+        return delete_zero(value/1000000) + 'M'
     elif value < 1000000000000:
-        return delete_zero(value/1000000000) + "G"
+        return delete_zero(value/1000000000) + 'G'
 
 def delete_zero(value):
-    if value % decimal.Decimal("1") == 0:   # the value has .0
+    if value % decimal.Decimal('1') == 0:   # the value has .0
         return str(int(value))
-    elif value % decimal.Decimal("0.1") == 0:
+    elif value % decimal.Decimal('0.1') == 0:
         return str(value.quantize(decimal.Decimal('1.0')))
-    elif value % decimal.Decimal("0.01") == 0:
+    elif value % decimal.Decimal('0.01') == 0:
         return str(value.quantize(decimal.Decimal('1.00')))
-    elif value % decimal.Decimal("0.001") == 0:
+    elif value % decimal.Decimal('0.001') == 0:
         return str(value.quantize(decimal.Decimal('1.000')))
     else:
         return str(value)
@@ -172,9 +172,9 @@ class KeyValuePair(GObject.Object):
     )
     value = GObject.Property(
         type=str,
-        nick="Value",
-        blurb="Value",
+        nick='Value',
+        blurb='Value',
         flags=GObject.ParamFlags.READWRITE,
-        default="",
+        default='',
     )
 
