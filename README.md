@@ -1,6 +1,6 @@
 # ![image](https://raw.githubusercontent.com/oyajun/color-code/216d995feeff738eeae765b12027cfe9cf87cbaf/data/icons/hicolor/scalable/apps/com.oyajun.ColorCode.svg) Color Code
 
-"Color Code" is the app converts to the resistance value from the color code.  
+"Color Code" is the app which converts to the resistance value from the color code.  
 Written with GTK 4 (Python) and libadwaita.
 ![image](https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot1.png)
 
