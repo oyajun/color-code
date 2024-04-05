@@ -1,0 +1,34 @@
+name: color-code # you probably want to 'snapcraft register <name>'
+grade: stable # must be 'stable' to release into candidate/stable channels
+adopt-info: color-code
+license: GPL-3.0+
+
+base: core22 # the base snap is the execution environment for this snap
+confinement: strict # use 'strict' once you have the right plugs and slots
+
+apps:
+  color-code:
+    extensions: [gnome]
+    command: usr/bin/color-code
+    desktop: usr/share/applications/com.oyajun.ColorCode.desktop
+    common-id: com.oyajun.ColorCode.desktop
+    plugs:
+      - gsettings
+      - cups
+
+parts:
+  color-code:
+    source: https://github.com/oyajun/color-code
+    source-tag: 'v0.1.0'
+    source-type: git
+    plugin: meson
+    meson-parameters:
+      - --prefix=/usr
+      - --buildtype=release
+    parse-info: [usr/share/metainfo/com.oyajun.ColorCode.appdata.xml]
+
+slots:
+  gnome-text-editor:
+    interface: dbus
+    bus: session
+    name: com.oyajun.ColorCode
