@@ -4,6 +4,9 @@
 Written with GTK 4 (Python) and libadwaita.
 ![image](https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot1.png)
 
+<a href='https://flathub.org/apps/com.oyajun.ColorCode'>
+    <img width='240' alt='Download on Flathub' src='https://flathub.org/api/badge?locale=en'/>
+</a>
 
 # Memo
 ```bash
