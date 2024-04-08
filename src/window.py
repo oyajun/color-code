@@ -38,6 +38,13 @@ class ColorCodeWindow(Adw.ApplicationWindow):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
+        settings = Gio.Settings(schema_id="com.oyajun.ColorCode")
+
+        settings.bind("width", self, "default-width", Gio.SettingsBindFlags.DEFAULT)
+        settings.bind("height", self, "default-height", Gio.SettingsBindFlags.DEFAULT)
+        settings.bind("is-maximized", self, "maximized", Gio.SettingsBindFlags.DEFAULT)
+        settings.bind("is-fullscreen", self, "fullscreened", Gio.SettingsBindFlags.DEFAULT)
+
         list_store_expression = Gtk.PropertyExpression.new(
             KeyValuePair,
             None,

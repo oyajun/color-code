@@ -4,7 +4,18 @@ using Adw 1;
 template $ColorCodeWindow: Adw.ApplicationWindow {
   default-width: 600;
   default-height: 300;
+  width-request: 300;
+  height-request: 200;
+
   title: _("Color Code");
+
+  Adw.Breakpoint {
+          condition ("max-width: 400sp")
+
+          setters {
+            drop_down_box.orientation: vertical;
+          }
+      }
 
   content: Adw.ToolbarView {
     [top]
@@ -41,7 +52,7 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
         };
       }
 
-      Box {
+      Box drop_down_box {
         halign: center;
         valign: center;
         spacing: 10;
