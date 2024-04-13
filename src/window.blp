@@ -3,14 +3,14 @@ using Adw 1;
 
 template $ColorCodeWindow: Adw.ApplicationWindow {
   default-width: 600;
-  default-height: 300;
-  width-request: 300;
-  height-request: 200;
+  default-height: 350;
+  width-request: 280;
+  height-request: 350;
 
   title: _("Color Code");
 
   Adw.Breakpoint {
-          condition ("max-width: 400sp")
+          condition ("max-width: 520sp")
 
           setters {
             drop_down_box.orientation: vertical;
