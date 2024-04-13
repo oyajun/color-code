@@ -26,6 +26,16 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.1.1" date="2024-04-14">
+      <description translate="no">
+        <p>This is the miner release</p>
+        <ul>
+          <li>Introduce responsible design</li>
+          <li>Add Russian translations</li>
+          <li>Fix the homepage URL of matadata</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.0" date="2024-04-02">
       <description translate="no">
         <p>The first release</p>
