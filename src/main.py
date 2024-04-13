@@ -55,7 +55,7 @@ class ColorCodeApplication(Adw.Application):
                                 application_icon='com.oyajun.ColorCode',
                                 developer_name='oyajun',
                                 version='0.1.0',
-                                developers=['oyajun'],
+                                developers=['oyajun','Alex K'],
                                 copyright='© 2024 oyajun')
         about.present()
 
