@@ -1,0 +1,92 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-02 11:55+0900\n"
+"PO-Revision-Date: 2024-04-08 11:24+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.4.2\n"
+"X-Poedit-Basepath: ../src\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: data/com.oyajun.ColorCode.desktop.in:3
+#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/window.blp:7
+msgid "Color Code"
+msgstr "Цветовой код"
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:4
+msgid "Calculate resistance from color codes"
+msgstr "Рассчитайте сопротивление по цветовым кодам"
+
+#: src/window.py:51 src/window.py:68
+msgid "⬛ Black"
+msgstr "⬛ Черный"
+
+#: src/window.py:52 src/window.py:69 src/window.py:88
+msgid "🟫 Brown"
+msgstr "🟫 Коричневый"
+
+#: src/window.py:53 src/window.py:70 src/window.py:89
+msgid "🟥 Red"
+msgstr "🟥 Красный"
+
+#: src/window.py:54 src/window.py:71 src/window.py:90
+msgid "🟧 Orange"
+msgstr "🟧 Оранжевый"
+
+#: src/window.py:55 src/window.py:72
+msgid "🟨 Yellow"
+msgstr "🟨 Желтый"
+
+#: src/window.py:56 src/window.py:73 src/window.py:91
+msgid "🟩 Green"
+msgstr "🟩 Зеленый"
+
+#: src/window.py:57 src/window.py:74 src/window.py:92
+msgid "🟦 Blue"
+msgstr "🟦 Синий"
+
+#: src/window.py:58 src/window.py:75 src/window.py:93
+msgid "🟪 Violet"
+msgstr "🟪 Фиолетовый"
+
+#: src/window.py:59 src/window.py:76
+msgid "🩶 Gray"
+msgstr "🩶 Серый"
+
+#: src/window.py:60 src/window.py:77
+msgid "⬜ White"
+msgstr "⬜ Белый"
+
+#: src/window.py:78 src/window.py:94
+msgid "🥇 Gold"
+msgstr "🥇 Золотой"
+
+#: src/window.py:79 src/window.py:95
+msgid "🥈 Silver"
+msgstr "🥈 Серебряный"
+
+#: src/window.py:80
+msgid "🩷 Pink"
+msgstr "🩷 Розовый"
+
+#: src/window.blp:16
+msgid "Menu"
+msgstr "Меню"
+
+#: src/window.blp:40
+msgid "Copy"
+msgstr "Копировать"
+
+#: src/window.blp:78
+msgid "_Keyboard Shortcuts"
+msgstr "_Комбинации Клавиш"
+
+#: src/window.blp:83
+msgid "_About Color Code"
+msgstr "_О Программе"
