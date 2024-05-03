@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-02 11:55+0900\n"
+"POT-Creation-Date: 2024-05-03 09:37+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,12 +18,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: data/com.oyajun.ColorCode.desktop.in:3
-#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/window.blp:7
+#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/window.blp:10
 msgid "Color Code"
 msgstr ""
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:4
-msgid "Calculate resistance from color codes"
+msgid "Color Code to Resistance Value"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:6
+msgid ""
+"Can't you understand Color Code? This app converts to the resistance value "
+"from the color code."
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:25
+msgid "The screenshot of \"Color Code\""
 msgstr ""
 
 #: src/window.py:51 src/window.py:68
@@ -78,18 +88,18 @@ msgstr ""
 msgid "🩷 Pink"
 msgstr ""
 
-#: src/window.blp:16
+#: src/window.blp:27
 msgid "Menu"
 msgstr ""
 
-#: src/window.blp:40
+#: src/window.blp:51
 msgid "Copy"
 msgstr ""
 
-#: src/window.blp:78
+#: src/window.blp:89
 msgid "_Keyboard Shortcuts"
 msgstr ""
 
-#: src/window.blp:83
+#: src/window.blp:94
 msgid "_About Color Code"
 msgstr ""
