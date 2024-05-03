@@ -26,6 +26,14 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.1.2" date="2024-05-03">
+      <description translate="no">
+        <p>This is the miner release</p>
+        <ul>
+          <li>Add Brazilian Portuguese Translation</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.1" date="2024-04-14">
       <description translate="no">
         <p>This is the miner release</p>
@@ -44,5 +52,6 @@
   </releases>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <content_rating type="oars-1.1" />
+  <content_rating type="oars-1.1"/>
 </component>
+
