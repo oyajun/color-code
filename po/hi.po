@@ -8,19 +8,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: color-code\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-03 09:37+0900\n"
-"PO-Revision-Date: 2024-05-06 18:02+0530\n"
-"Last-Translator: Scrambled777 <weblate.scrambled777@simplelogin.com>\n"
+"POT-Creation-Date: 2024-08-04 21:06+0900\n"
+"PO-Revision-Date: 2024-08-04 21:19+0900\n"
+"Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
 "Language-Team: Hindi\n"
 "Language: hi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Gtranslator 46.1\n"
+"X-Generator: Poedit 3.4.4\n"
 
-#: data/com.oyajun.ColorCode.desktop.in:3
-#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/window.blp:10
+#: data/com.oyajun.ColorCode.desktop.in:3 data/com.oyajun.ColorCode.metainfo.xml.in:3
+#: src/main.py:55 src/window.blp:10
 msgid "Color Code"
 msgstr "Color Code"
 
@@ -30,14 +30,21 @@ msgstr "प्रतिरोध मान के लिए रंग कोड"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:6
 msgid ""
-"Can't you understand Color Code? This app converts to the resistance value "
-"from the color code."
-msgstr ""
-"क्या आप रंग कोड नहीं समझ सकते? यह ऐप रंग कोड से प्रतिरोध मान में परिवर्तित होता है।"
+"Can't you understand Color Code? This app converts to the resistance value from "
+"the color code."
+msgstr "क्या आप रंग कोड नहीं समझ सकते? यह ऐप रंग कोड से प्रतिरोध मान में परिवर्तित होता है।"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:25
 msgid "The screenshot of \"Color Code\""
 msgstr "\"Color Code\" का स्क्रीनशॉट"
+
+#. Tranlator Credits: Add your name.
+#. Example)
+#. oyajun <jun@example.com>\n
+#. joe <joe@example.com>
+#: src/main.py:65
+msgid "translator_credits"
+msgstr "Scrambled777 <weblate.scrambled777@simplelogin.com>"
 
 #: src/window.py:51 src/window.py:68
 msgid "⬛ Black"

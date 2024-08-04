@@ -6,11 +6,11 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-02 11:55+0900\n"
-"PO-Revision-Date: 2024-04-27 15:05-0300\n"
-"Last-Translator: Gabriel de Moura <smolblackcat@proton.me>\n"
+"POT-Creation-Date: 2024-08-04 21:06+0900\n"
+"PO-Revision-Date: 2024-08-04 21:15+0900\n"
+"Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
 "Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge."
 "net>\n"
 "Language: pt_BR\n"
@@ -18,15 +18,34 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: data/com.oyajun.ColorCode.desktop.in:3
-#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/window.blp:7
+#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/main.py:55 src/window.blp:10
 msgid "Color Code"
 msgstr "Código de Cor"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:4
-msgid "Calculate resistance from color codes"
-msgstr "Calcule a resistência apartir de código de cores"
+msgid "Color Code to Resistance Value"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:6
+msgid ""
+"Can't you understand Color Code? This app converts to the resistance value "
+"from the color code."
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:25
+msgid "The screenshot of \"Color Code\""
+msgstr ""
+
+#. Tranlator Credits: Add your name.
+#. Example)
+#. oyajun <jun@example.com>\n
+#. joe <joe@example.com>
+#: src/main.py:65
+msgid "translator_credits"
+msgstr "Gabriel de Moura <smolblackcat@proton.me>"
 
 #: src/window.py:51 src/window.py:68
 msgid "⬛ Black"
@@ -80,18 +99,21 @@ msgstr "🥈 Prata"
 msgid "🩷 Pink"
 msgstr "🩷 Rosa"
 
-#: src/window.blp:16
+#: src/window.blp:27
 msgid "Menu"
 msgstr "Menu"
 
-#: src/window.blp:40
+#: src/window.blp:51
 msgid "Copy"
 msgstr "Copiar"
 
-#: src/window.blp:78
+#: src/window.blp:89
 msgid "_Keyboard Shortcuts"
 msgstr "_Atalhos de Teclado"
 
-#: src/window.blp:83
+#: src/window.blp:94
 msgid "_About Color Code"
 msgstr "_Sobre Color Code"
+
+#~ msgid "Calculate resistance from color codes"
+#~ msgstr "Calcule a resistência apartir de código de cores"

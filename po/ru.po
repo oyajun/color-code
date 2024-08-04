@@ -2,26 +2,44 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-02 11:55+0900\n"
-"PO-Revision-Date: 2024-04-08 11:24+0800\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2024-08-04 21:06+0900\n"
+"PO-Revision-Date: 2024-08-04 21:09+0900\n"
+"Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
 "Language-Team: \n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-Basepath: ../src\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: data/com.oyajun.ColorCode.desktop.in:3
-#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/window.blp:7
+#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/main.py:55 src/window.blp:10
 msgid "Color Code"
 msgstr "Цветовой код"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:4
-msgid "Calculate resistance from color codes"
-msgstr "Рассчитайте сопротивление по цветовым кодам"
+msgid "Color Code to Resistance Value"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:6
+msgid ""
+"Can't you understand Color Code? This app converts to the resistance value "
+"from the color code."
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:25
+msgid "The screenshot of \"Color Code\""
+msgstr ""
+
+#. Tranlator Credits: Add your name.
+#. Example)
+#. oyajun <jun@example.com>\n
+#. joe <joe@example.com>
+#: src/main.py:65
+msgid "translator_credits"
+msgstr "Alex K"
 
 #: src/window.py:51 src/window.py:68
 msgid "⬛ Black"
@@ -75,18 +93,21 @@ msgstr "🥈 Серебряный"
 msgid "🩷 Pink"
 msgstr "🩷 Розовый"
 
-#: src/window.blp:16
+#: src/window.blp:27
 msgid "Menu"
 msgstr "Меню"
 
-#: src/window.blp:40
+#: src/window.blp:51
 msgid "Copy"
 msgstr "Копировать"
 
-#: src/window.blp:78
+#: src/window.blp:89
 msgid "_Keyboard Shortcuts"
 msgstr "_Комбинации Клавиш"
 
-#: src/window.blp:83
+#: src/window.blp:94
 msgid "_About Color Code"
 msgstr "_О Программе"
+
+#~ msgid "Calculate resistance from color codes"
+#~ msgstr "Рассчитайте сопротивление по цветовым кодам"

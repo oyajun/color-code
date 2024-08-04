@@ -8,19 +8,19 @@ msgid ""
 msgstr ""
 "Project-Id-Version: color-code\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-04 13:14+0200\n"
-"PO-Revision-Date: 2024-05-04 13:28+0200\n"
-"Last-Translator: twlvnn <kraft_werk@tutanota.com>\n"
+"POT-Creation-Date: 2024-08-04 21:06+0900\n"
+"PO-Revision-Date: 2024-08-04 21:17+0900\n"
+"Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
 "Language-Team: Bulgarian <dict-notifications@fsa-bg.org>\n"
 "Language: bg\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
-"X-Generator: Gtranslator 46.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: data/com.oyajun.ColorCode.desktop.in:3
-#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/window.blp:10
+#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/main.py:55 src/window.blp:10
 msgid "Color Code"
 msgstr "Цветен Код"
 
@@ -36,13 +36,17 @@ msgstr ""
 "Разбирате ли цветният код на резисторите? Това приложение преобразува "
 "стойността на съпротивлението от цветния код."
 
-#: data/com.oyajun.ColorCode.metainfo.xml.in:18
-msgid "oyajun"
-msgstr "oyajun"
-
 #: data/com.oyajun.ColorCode.metainfo.xml.in:25
 msgid "The screenshot of \"Color Code\""
 msgstr "Снимка на екрана от „Цветен Код“"
+
+#. Tranlator Credits: Add your name.
+#. Example)
+#. oyajun <jun@example.com>\n
+#. joe <joe@example.com>
+#: src/main.py:65
+msgid "translator_credits"
+msgstr "twlvnn <kraft_werk@tutanota.com>"
 
 #: src/window.py:51 src/window.py:68
 msgid "⬛ Black"
@@ -111,3 +115,6 @@ msgstr "_Клавишни комбинации"
 #: src/window.blp:94
 msgid "_About Color Code"
 msgstr "_Относно „Цветен Код“"
+
+#~ msgid "oyajun"
+#~ msgstr "oyajun"
