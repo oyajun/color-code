@@ -26,6 +26,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.1.3" date="2024-08-05">
+      <description translate="no">
+        <p>This is the miner release</p>
+        <ul>
+          <li>Add Brazilian Portuguese Translation</li>
+          <li>Translators Credits in About Dialog</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.2" date="2024-05-03">
       <description translate="no">
         <p>This is the miner release</p>
@@ -38,7 +47,7 @@
       <description translate="no">
         <p>This is the miner release</p>
         <ul>
-          <li>Introduce responsible design</li>
+          <li>Introduce responsive design</li>
           <li>Add Russian translations</li>
           <li>Fix the homepage URL of matadata</li>
         </ul>
@@ -52,6 +61,5 @@
   </releases>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <content_rating type="oars-1.1"/>
+  <content_rating type="oars-1.1" />
 </component>
-
