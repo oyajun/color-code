@@ -63,7 +63,7 @@ class ColorCodeApplication(Adw.Application):
                                 # oyajun <jun@example.com>\n
                                 # joe <joe@example.com>
                                 translator_credits=_('translator_credits'),
-                                copyright='© 2024 oyajun')
+                                copyright='© 2024 oyajun\nGPL-3.0-or-later')
         about.present()
 
     def on_preferences_action(self, widget, _):
