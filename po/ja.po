@@ -25,17 +25,17 @@ msgstr "カラーコード"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:4
 msgid "Color Code to Resistance Value"
-msgstr ""
+msgstr "カラーコードから抵抗値を計算"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:6
 msgid ""
 "Can't you understand Color Code? This app converts to the resistance value "
 "from the color code."
-msgstr ""
+msgstr "抵抗のカラーコードが読めませんか？このアプリでカラーコードから抵抗値を計算しましょう。"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:25
 msgid "The screenshot of \"Color Code\""
-msgstr ""
+msgstr "\"カラーコード\"のスクリーンショット"
 
 #. Tranlator Credits: Add your name.
 #. Example)
