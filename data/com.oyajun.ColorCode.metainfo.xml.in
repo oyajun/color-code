@@ -30,7 +30,9 @@
       <description translate="no">
         <p>This is the miner release</p>
         <ul>
-          <li>Add Brazilian Portuguese Translation</li>
+          <li>Add Bulgarian Translation</li>
+          <li>Add Hindi Translation</li>
+          <li>Add Arabic Translation</li>
           <li>Translators Credits in About Dialog</li>
         </ul>
       </description>
