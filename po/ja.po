@@ -7,24 +7,43 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-02 11:55+0900\n"
-"PO-Revision-Date: 2024-04-02 13:01+0900\n"
-"Last-Translator: oyajun <oyamadajun@outlook.jp>\n"
+"POT-Creation-Date: 2024-08-04 20:41+0900\n"
+"PO-Revision-Date: 2024-08-04 20:44+0900\n"
+"Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #: data/com.oyajun.ColorCode.desktop.in:3
-#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/window.blp:7
+#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/main.py:55 src/window.blp:10
 msgid "Color Code"
 msgstr "カラーコード"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:4
-msgid "Calculate resistance from color codes"
-msgstr "カラーコードから抵抗値を計算"
+msgid "Color Code to Resistance Value"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:6
+msgid ""
+"Can't you understand Color Code? This app converts to the resistance value "
+"from the color code."
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:25
+msgid "The screenshot of \"Color Code\""
+msgstr ""
+
+#. Tranlator Credits: Add your name.
+#. Example)
+#. oyajun <jun@example.com>\n
+#. joe <joe@example.com>
+#: src/main.py:65
+msgid "translator_credits"
+msgstr "oyajun <oyamadajun@outlook.jp>"
 
 #: src/window.py:51 src/window.py:68
 msgid "⬛ Black"
@@ -78,18 +97,18 @@ msgstr "🥈 銀"
 msgid "🩷 Pink"
 msgstr "🩷 桃"
 
-#: src/window.blp:16
+#: src/window.blp:27
 msgid "Menu"
 msgstr "メニュー"
 
-#: src/window.blp:40
+#: src/window.blp:51
 msgid "Copy"
 msgstr "コピー"
 
-#: src/window.blp:78
+#: src/window.blp:89
 msgid "_Keyboard Shortcuts"
 msgstr "キーボードショートカット(_K)"
 
-#: src/window.blp:83
+#: src/window.blp:94
 msgid "_About Color Code"
 msgstr "カラーコードについて(_A)"

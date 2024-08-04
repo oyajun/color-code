@@ -25,6 +25,7 @@ gi.require_version('Adw', '1')
 
 from gi.repository import Gtk, Gio, Adw
 from .window import ColorCodeWindow
+from gettext import gettext
 
 
 class ColorCodeApplication(Adw.Application):
@@ -48,14 +49,20 @@ class ColorCodeApplication(Adw.Application):
             win = ColorCodeWindow(application=self)
         win.present()
 
-    def on_about_action(self, widget, _):
+    def on_about_action(self, widget, _unused):
         """Callback for the app.about action."""
         about = Adw.AboutWindow(transient_for=self.props.active_window,
-                                application_name='Color Code',
+                                application_name= _('Color Code'),
                                 application_icon='com.oyajun.ColorCode',
                                 developer_name='oyajun',
                                 version='0.1.2',
                                 developers=['oyajun','Alex K','FineFindus'],
+
+                                # Tranlator Credits: Add your name.
+                                # Example)
+                                # oyajun <jun@example.com>\n
+                                # joe <joe@example.com>
+                                translator_credits=_('translator_credits'),
                                 copyright='© 2024 oyajun')
         about.present()
 

@@ -15,7 +15,7 @@
   <id>com.oyajun.ColorCode.desktop</id>
   <launchable type="desktop-id">com.oyajun.ColorCode.desktop</launchable>
   <developer id="com.oyajun">
-    <name>oyajun</name>
+    <name translate="no">oyajun</name>
   </developer>
   <url type="homepage">https://github.com/oyajun/color-code</url>
   <screenshots>
