@@ -57,13 +57,14 @@ class ColorCodeApplication(Adw.Application):
                                 developer_name='oyajun',
                                 version='0.1.4',
                                 developers=['oyajun','Alex K','FineFindus'],
+                                license_type=Gtk.License.GPL_3_0,
 
                                 # Tranlator Credits: Add your name.
                                 # Example)
                                 # oyajun <jun@example.com>\n
                                 # joe <joe@example.com>
                                 translator_credits=_('translator_credits'),
-                                copyright='© 2024 oyajun\nGPL-3.0-or-later')
+                                copyright='© 2024 oyajun')
         about.present()
 
     def on_preferences_action(self, widget, _):
