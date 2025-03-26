@@ -21,8 +21,8 @@ jobs:
             runner: ubuntu-24.04-arm
     runs-on: ${{ matrix.variant.runner }}
     steps:
-      - uses: actions/checkout@<commit hash>
-      - uses: flathub-infra/flatpak-github-actions/flatpak-builder@<commit hash>
+      - uses: actions/checkout@v4
+      - uses: flathub-infra/flatpak-github-actions/flatpak-builder
         with:
           bundle: palette.flatpak
           manifest-path: org.gnome.zbrown.Palette.yml
