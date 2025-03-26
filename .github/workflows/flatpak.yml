@@ -22,7 +22,7 @@ jobs:
     runs-on: ${{ matrix.variant.runner }}
     steps:
       - uses: actions/checkout@v4
-      - uses: flathub-infra/flatpak-github-actions/flatpak-builder
+      - uses: flathub-infra/flatpak-github-actions/flatpak-builder@fd6057f0ee4fac29a1a51c036b92c9c03ec74e17
         with:
           bundle: palette.flatpak
           manifest-path: org.gnome.zbrown.Palette.yml
