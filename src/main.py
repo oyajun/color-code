@@ -55,7 +55,7 @@ class ColorCodeApplication(Adw.Application):
                                 application_name= _('Color Code'),
                                 application_icon='com.oyajun.ColorCode',
                                 developer_name='oyajun',
-                                version='0.1.4',
+                                version='0.1.5',
                                 developers=['oyajun','Alex K','FineFindus','Mr-TBNR-BliTzz'],
                                 license_type=Gtk.License.GPL_3_0,
 
@@ -64,7 +64,7 @@ class ColorCodeApplication(Adw.Application):
                                 # oyajun <jun@example.com>\n
                                 # joe <joe@example.com>
                                 translator_credits=_('translator_credits'),
-                                copyright='© 2024 oyajun')
+                                copyright='© 2025 oyajun')
         about.present()
 
     def on_preferences_action(self, widget, _):
