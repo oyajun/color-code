@@ -26,6 +26,15 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.1.5" date="2025-03-27">
+      <description translate="no">
+        <p>This is the miner release</p>
+        <ul>
+          <li>Add Spanish Translations</li>
+          <li>Update to GNOME 48 SDK</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.4" date="2024-08-05">
       <description translate="no">
         <p>This is the miner release</p>
@@ -71,6 +80,5 @@
   </releases>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
-  <content_rating type="oars-1.1"/>
+  <content_rating type="oars-1.1" />
 </component>
-
