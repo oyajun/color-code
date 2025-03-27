@@ -6,75 +6,142 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
   default-height: 350;
   width-request: 280;
   height-request: 350;
-
   title: _("Color Code");
 
   Adw.Breakpoint {
-          condition ("max-width: 520sp")
+    condition ("max-width: 550sp")
 
-          setters {
-            drop_down_box.orientation: vertical;
-          }
-      }
+    setters {
+      header_bar.title-widget: null;
+      switcher_bar.reveal: true;
+      drop_down_box.orientation: vertical;
+    }
+  }
 
-  content: Adw.ToolbarView {
-    [top]
+  content: Box {
+    orientation: vertical;
+
     Adw.HeaderBar header_bar {
-      [end]
-      MenuButton {
-        primary: true;
-        icon-name: "open-menu-symbolic";
-        tooltip-text: _("Menu");
-        menu-model: primary_menu;
-      }
+      title-widget: Adw.ViewSwitcher switcher_title {
+        stack: stack;
+        policy: wide;
+      };
     }
 
-    content: Box {
-      orientation: vertical;
-      halign: center;
-      valign: center;
+    Adw.ViewStack stack {
+      vexpand: true;
 
-      CenterBox {
-        halign: center;
-        valign: center;
-        margin-bottom: 45;
+      Adw.ViewStackPage page1 {
+        name: "page1";
+        title: _("4 Bands");
+        icon-name: "edit-copy-symbolic";
+        use-underline: true;
 
-        center-widget: Label result_label {
-          width-request: 200;
-          styles [
-            "title-1"
-          ]
-        };
+        child: Box {
+          orientation: vertical;
+          halign: center;
+          valign: center;
 
-        end-widget: Button copy_button {
-          icon-name: "edit-copy-symbolic";
-          tooltip-text: _("Copy");
+          CenterBox {
+            halign: center;
+            valign: center;
+            margin-bottom: 45;
+
+            center-widget: Label result_label {
+              width-request: 200;
+
+              styles [
+                "title-1"
+              ]
+            };
+
+            end-widget: Button copy_button {
+              icon-name: "edit-copy-symbolic";
+              tooltip-text: _("Copy");
+            };
+          }
+
+          Box drop_down_box {
+            halign: center;
+            valign: center;
+            spacing: 10;
+
+            DropDown drop_down_1 {
+              width-request: 120;
+            }
+
+            DropDown drop_down_2 {
+              width-request: 120;
+            }
+
+            DropDown drop_down_3 {
+              width-request: 120;
+            }
+
+            DropDown drop_down_4 {
+              width-request: 120;
+            }
+          }
         };
       }
 
-      Box drop_down_box {
-        halign: center;
-        valign: center;
-        spacing: 10;
+      Adw.ViewStackPage page2 {
+        name: "page2";
+        title: _("5 Bands");
+        icon-name: "edit-copy-symbolic";
+        use-underline: true;
 
-        DropDown drop_down_1 {
-          width-request: 120;
-        }
+        child: Adw.StatusPage {
+          title: bind page2.title;
+          icon-name: bind page2.icon-name;
 
-        DropDown drop_down_2 {
-          width-request: 120;
-        }
+          child: Box {
+            orientation: vertical;
+            valign: center;
 
-        DropDown drop_down_3 {
-          width-request: 120;
-        }
+            LinkButton {
+              label: _("API Reference");
+              uri: "https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1.6/class.ViewSwitcher.html";
+            }
 
-        DropDown drop_down_4 {
-          width-request: 120;
-        }
+            LinkButton {
+              label: _("Human Interface Guidelines");
+              uri: "https://developer.gnome.org/hig/patterns/nav/view-switchers.html";
+            }
+          };
+        };
       }
 
-    };
+      Adw.ViewStackPage page3 {
+        name: "page3";
+        title: _("6 Bands");
+        icon-name: "edit-copy-symbolic";
+        use-underline: true;
+
+        child: Adw.StatusPage {
+          title: bind page3.title;
+          valign: start;
+          margin-start: 15;
+          margin-end: 15;
+
+          child: Adw.Clamp {
+            maximum-size: 500;
+
+            ListBox notification_list {
+              halign: baseline;
+
+              styles [
+                "boxed-list"
+              ]
+            }
+          };
+        };
+      }
+
+      Adw.ViewSwitcherBar switcher_bar {
+        stack: stack;
+      }
+    }
   };
 }
 
@@ -84,7 +151,6 @@ menu primary_menu {
     //   label: _("_Preferences");
     //   action: "app.preferences";
     // }
-
     item {
       label: _("_Keyboard Shortcuts");
       action: "win.show-help-overlay";
