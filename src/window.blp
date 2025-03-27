@@ -26,6 +26,14 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
         stack: stack;
         policy: wide;
       };
+
+      [end]
+      MenuButton {
+        primary: true;
+        icon-name: "open-menu-symbolic";
+        tooltip-text: _("Menu");
+        menu-model: primary_menu;
+      }
     }
 
     Adw.ViewStack stack {
