@@ -3,6 +3,7 @@
 # Copyright (C) 2024 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Gabriel de Moura <smolblackcat@proton.me>, 2024.
+# John peter sa <johnppetersa@gmail.com>, 2025.
 #
 msgid ""
 msgstr ""
