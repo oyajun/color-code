@@ -48,7 +48,9 @@ msgstr "A captura de tela do \"código de cores\""
 #. joe <joe@example.com>
 #: src/main.py:65
 msgid "translator_credits"
-msgstr "Gabriel de Moura <smolblackcat@proton.me>"
+msgstr ""
+"Gabriel de Moura <smolblackcat@proton.me>\n"
+"John peter sa <johnppetersa@gmail.com>"
 
 #: src/window.py:51 src/window.py:68
 msgid "⬛ Black"
