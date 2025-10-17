@@ -1,15 +1,15 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ColorCodeWindow: Adw.ApplicationWindow {
+template ColorCodeWindow : Adw.ApplicationWindow {
   default-width: 600;
   default-height: 350;
   width-request: 280;
   height-request: 350;
   title: _("Color Code");
 
-  Adw.Breakpoint {
-    condition ("max-width: 550sp")
+  Adw.Breakpoint breakpoint_narrow {
+    condition ("max-width: 550px")
 
     setters {
       header_bar.title-widget: null;
@@ -18,9 +18,8 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
     }
   }
 
-  content: Box {
-    orientation: vertical;
-
+  content: Adw.ToolbarView {
+    [top]
     Adw.HeaderBar header_bar {
       title-widget: Adw.ViewSwitcher switcher_title {
         stack: stack;
@@ -36,7 +35,7 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
       }
     }
 
-    Adw.ViewStack stack {
+    content: Adw.ViewStack stack {
       vexpand: true;
 
       Adw.ViewStackPage page1 {
@@ -49,15 +48,17 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
           orientation: vertical;
           halign: center;
           valign: center;
+          spacing: 24;
+          margin-top: 12;
+          margin-bottom: 12;
+          margin-start: 12;
+          margin-end: 12;
 
           CenterBox {
             halign: center;
-            valign: center;
-            margin-bottom: 45;
 
             center-widget: Label result_label {
               width-request: 200;
-
               styles [
                 "title-1"
               ]
@@ -66,12 +67,12 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
             end-widget: Button copy_button {
               icon-name: "edit-copy-symbolic";
               tooltip-text: _("Copy");
+              valign: center;
             };
           }
 
           Box drop_down_box {
             halign: center;
-            valign: center;
             spacing: 10;
 
             DropDown drop_down_1 {
@@ -106,10 +107,11 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
           child: Box {
             orientation: vertical;
             valign: center;
+            spacing: 6;
 
             LinkButton {
               label: _("API Reference");
-              uri: "https://gnome.pages.gitlab.gnome.org/libadwaita/doc/1.6/class.ViewSwitcher.html";
+              uri: "https://gnome.pages.gitlab.gnome.org/libadwaita/doc/main/class.ViewSwitcher.html";
             }
 
             LinkButton {
@@ -129,15 +131,15 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
         child: Adw.StatusPage {
           title: bind page3.title;
           valign: start;
-          margin-start: 15;
-          margin-end: 15;
+          margin-top: 12;
+          margin-start: 12;
+          margin-end: 12;
 
           child: Adw.Clamp {
             maximum-size: 500;
 
             ListBox notification_list {
-              halign: baseline;
-
+              halign: fill;
               styles [
                 "boxed-list"
               ]
@@ -145,25 +147,22 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
           };
         };
       }
+    };
 
-      Adw.ViewSwitcherBar switcher_bar {
-        stack: stack;
-      }
+    [bottom]
+    Adw.ViewSwitcherBar switcher_bar {
+      stack: stack;
+      reveal: false;
     }
   };
 }
 
 menu primary_menu {
   section {
-    // item {
-    //   label: _("_Preferences");
-    //   action: "app.preferences";
-    // }
     item {
       label: _("_Keyboard Shortcuts");
       action: "win.show-help-overlay";
     }
-
     item {
       label: _("_About Color Code");
       action: "app.about";
