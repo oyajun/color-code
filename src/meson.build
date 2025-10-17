@@ -40,6 +40,7 @@ color_code_sources = [
   '__init__.py',
   'main.py',
   'window.py',
+  'utils.py',
 ]
 
 install_data(color_code_sources, install_dir: moduledir)
