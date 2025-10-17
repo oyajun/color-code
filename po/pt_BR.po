@@ -3,22 +3,23 @@
 # Copyright (C) 2024 THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # Gabriel de Moura <smolblackcat@proton.me>, 2024.
+# John peter sa <johnppetersa@gmail.com>, 2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-04 21:06+0900\n"
-"PO-Revision-Date: 2024-08-04 21:15+0900\n"
-"Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
-"Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge."
-"net>\n"
+"PO-Revision-Date: 2025-04-17 15:10-0300\n"
+"Last-Translator: John peter sa <johnppetersa@gmail.com>\n"
+"Language-Team: Brazilian Portuguese <ldpbr-"
+"translation@lists.sourceforge.net>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.5\n"
 
 #: data/com.oyajun.ColorCode.desktop.in:3
 #: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/main.py:55 src/window.blp:10
@@ -27,17 +28,19 @@ msgstr "Código de Cor"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:4
 msgid "Color Code to Resistance Value"
-msgstr ""
+msgstr "Código de cores para valor de resistência"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:6
 msgid ""
 "Can't you understand Color Code? This app converts to the resistance value "
 "from the color code."
 msgstr ""
+"Você não consegue entender o código de cores? Este aplicativo se converte ao "
+"valor de resistência do código de cores."
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:25
 msgid "The screenshot of \"Color Code\""
-msgstr ""
+msgstr "A captura de tela do \"código de cores\""
 
 #. Tranlator Credits: Add your name.
 #. Example)
@@ -45,7 +48,9 @@ msgstr ""
 #. joe <joe@example.com>
 #: src/main.py:65
 msgid "translator_credits"
-msgstr "Gabriel de Moura <smolblackcat@proton.me>"
+msgstr ""
+"Gabriel de Moura <smolblackcat@proton.me>\n"
+"John peter sa <johnppetersa@gmail.com>"
 
 #: src/window.py:51 src/window.py:68
 msgid "⬛ Black"
