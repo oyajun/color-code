@@ -17,9 +17,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-from gi.repository import Adw, Gtk, Gdk, Gio, GObject
-import decimal
-from .utils import *
+from gi.repository import Adw, Gtk
 from .page_4_bands import Page4Bands
 
 @Gtk.Template(resource_path='/com/oyajun/ColorCode/window.ui')
