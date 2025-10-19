@@ -1,4 +1,4 @@
-# drop_down_value.py
+# drop_down_multiplier.py.py
 #
 # Copyright 2025 oyajun
 #
@@ -20,9 +20,9 @@
 from gi.repository import Gtk, Gio
 from .utils import KeyValuePair
 
-@Gtk.Template(resource_path='/com/oyajun/ColorCode/drop_down_value.ui')
-class DropDownValue(Gtk.DropDown):
-    __gtype_name__ = 'DropDownValue'
+@Gtk.Template(resource_path='/com/oyajun/ColorCode/drop_down_multiplier.ui')
+class DropDownMultiplier(Gtk.DropDown):
+    __gtype_name__ = 'DropDownMultiplier'
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -33,8 +33,8 @@ class DropDownValue(Gtk.DropDown):
             'value',
         )
 
-        value_model = Gio.ListStore(item_type=KeyValuePair)
-        value_model.splice(
+        multiplier_model = Gio.ListStore(item_type=KeyValuePair)
+        multiplier_model.splice(
             0, 0,
             [
                 KeyValuePair(key='0', value=_('⬛ Black')),
@@ -47,9 +47,13 @@ class DropDownValue(Gtk.DropDown):
                 KeyValuePair(key='7', value=_('🟪 Violet')),
                 KeyValuePair(key='8', value=_('🩶 Gray')),
                 KeyValuePair(key='9', value=_('⬜ White')),
+                KeyValuePair(key='-1', value=_('🥇 Gold')),
+                KeyValuePair(key='-2', value=_('🥈 Silver')),
+                KeyValuePair(key='-3', value=_('🩷 Pink')),
             ],
         )
 
+
         self.set_expression(list_store_expression)
 
-        self.set_model(value_model)
+        self.set_model(multiplier_model)

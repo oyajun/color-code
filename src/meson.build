@@ -51,8 +51,8 @@ color_code_sources = [
   'page_5_bands.py',
   'page_6_bands.py',
   'drop_down_value.py',
-  #'drop_down_multiplier.py',
-  #'drop_down_tolerance.py'
+  'drop_down_multiplier.py',
+  'drop_down_tolerance.py'
 ]
 
 install_data(color_code_sources, install_dir: moduledir)

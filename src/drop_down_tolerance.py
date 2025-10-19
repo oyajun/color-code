@@ -1,4 +1,4 @@
-# drop_down_value.py
+# drop_down_tolerance.py
 #
 # Copyright 2025 oyajun
 #
@@ -20,9 +20,9 @@
 from gi.repository import Gtk, Gio
 from .utils import KeyValuePair
 
-@Gtk.Template(resource_path='/com/oyajun/ColorCode/drop_down_value.ui')
-class DropDownValue(Gtk.DropDown):
-    __gtype_name__ = 'DropDownValue'
+@Gtk.Template(resource_path='/com/oyajun/ColorCode/drop_down_tolerance.ui')
+class DropDownTolerance(Gtk.DropDown):
+    __gtype_name__ = 'DropDownTolerance'
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -33,23 +33,21 @@ class DropDownValue(Gtk.DropDown):
             'value',
         )
 
-        value_model = Gio.ListStore(item_type=KeyValuePair)
-        value_model.splice(
+        tolerance_model = Gio.ListStore(item_type=KeyValuePair)
+        tolerance_model.splice(
             0, 0,
             [
-                KeyValuePair(key='0', value=_('⬛ Black')),
                 KeyValuePair(key='1', value=_('🟫 Brown')),
                 KeyValuePair(key='2', value=_('🟥 Red')),
-                KeyValuePair(key='3', value=_('🟧 Orange')),
-                KeyValuePair(key='4', value=_('🟨 Yellow')),
-                KeyValuePair(key='5', value=_('🟩 Green')),
-                KeyValuePair(key='6', value=_('🟦 Blue')),
-                KeyValuePair(key='7', value=_('🟪 Violet')),
-                KeyValuePair(key='8', value=_('🩶 Gray')),
-                KeyValuePair(key='9', value=_('⬜ White')),
+                KeyValuePair(key='0.05', value=_('🟧 Orange')),
+                KeyValuePair(key='0.5', value=_('🟩 Green')),
+                KeyValuePair(key='0.25', value=_('🟦 Blue')),
+                KeyValuePair(key='0.1', value=_('🟪 Violet')),
+                KeyValuePair(key='5', value=_('🥇 Gold')),
+                KeyValuePair(key='10', value=_('🥈 Silver')),
             ],
         )
 
         self.set_expression(list_store_expression)
 
-        self.set_model(value_model)
+        self.set_model(tolerance_model)
