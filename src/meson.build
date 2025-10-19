@@ -8,7 +8,10 @@ blueprints = custom_target('blueprints',
     'gtk/help-overlay.blp',
     'page_4_bands.blp',
     'page_5_bands.blp',
-    'page_6_bands.blp'
+    'page_6_bands.blp',
+    'drop_down_value.blp',
+    'drop_down_multiplier.blp',
+    'drop_down_tolerance.blp'
   ),
   output: '.',
   command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
@@ -46,7 +49,10 @@ color_code_sources = [
   'utils.py',
   'page_4_bands.py',
   'page_5_bands.py',
-  'page_6_bands.py'
+  'page_6_bands.py',
+  'drop_down_value.py',
+  #'drop_down_multiplier.py',
+  #'drop_down_tolerance.py'
 ]
 
 install_data(color_code_sources, install_dir: moduledir)

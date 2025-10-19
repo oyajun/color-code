@@ -20,6 +20,7 @@
 from gi.repository import Adw, Gtk, Gdk, Gio
 import decimal
 from .utils import *
+from .drop_down_value import DropDownValue
 
 @Gtk.Template(resource_path='/com/oyajun/ColorCode/page_4_bands.ui')
 class Page4Bands(Gtk.Box):
@@ -143,4 +144,5 @@ class Page4Bands(Gtk.Box):
         print(value_str)
         value_display = f'{convert_to_MKG(value)}Ω ±{tolerance}%'
         self.result_label.set_label(str = value_display)
+
 
