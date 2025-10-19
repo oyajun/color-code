@@ -6,7 +6,9 @@ blueprints = custom_target('blueprints',
   input: files(
     'window.blp',
     'gtk/help-overlay.blp',
-    'page_4_bands.blp'
+    'page_4_bands.blp',
+    'page_5_bands.blp',
+    'page_6_bands.blp'
   ),
   output: '.',
   command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
@@ -42,7 +44,9 @@ color_code_sources = [
   'main.py',
   'window.py',
   'utils.py',
-  'page_4_bands.py'
+  'page_4_bands.py',
+  'page_5_bands.py',
+  'page_6_bands.py'
 ]
 
 install_data(color_code_sources, install_dir: moduledir)

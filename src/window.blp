@@ -53,26 +53,7 @@ template $ColorCodeWindow : Adw.ApplicationWindow {
         icon-name: "edit-copy-symbolic";
         use-underline: true;
 
-        child: Adw.StatusPage {
-          title: bind page2.title;
-          icon-name: bind page2.icon-name;
-
-          child: Box {
-            orientation: vertical;
-            valign: center;
-            spacing: 6;
-
-            LinkButton {
-              label: _("API Reference");
-              uri: "https://gnome.pages.gitlab.gnome.org/libadwaita/doc/main/class.ViewSwitcher.html";
-            }
-
-            LinkButton {
-              label: _("Human Interface Guidelines");
-              uri: "https://developer.gnome.org/hig/patterns/nav/view-switchers.html";
-            }
-          };
-        };
+        child: $Page5Bands {};
       }
 
       Adw.ViewStackPage page3 {
@@ -81,24 +62,7 @@ template $ColorCodeWindow : Adw.ApplicationWindow {
         icon-name: "edit-copy-symbolic";
         use-underline: true;
 
-        child: Adw.StatusPage {
-          title: bind page3.title;
-          valign: start;
-          margin-top: 12;
-          margin-start: 12;
-          margin-end: 12;
-
-          child: Adw.Clamp {
-            maximum-size: 500;
-
-            ListBox notification_list {
-              halign: fill;
-              styles [
-                "boxed-list"
-              ]
-            }
-          };
-        };
+        child: $Page6Bands {};
       }
     };
 

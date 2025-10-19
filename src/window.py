@@ -19,6 +19,8 @@
 
 from gi.repository import Adw, Gtk
 from .page_4_bands import Page4Bands
+from .page_5_bands import Page5Bands
+from .page_6_bands import Page6Bands
 
 @Gtk.Template(resource_path='/com/oyajun/ColorCode/window.ui')
 class ColorCodeWindow(Adw.ApplicationWindow):
