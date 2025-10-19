@@ -17,7 +17,7 @@
 #
 # SPDX-License-Identifier: GPL-3.0-or-later
 
-from gi.repository import Adw, Gtk, Gdk, Gio, GObject
+from gi.repository import Adw, Gtk, Gdk, Gio
 import decimal
 from .utils import *
 
@@ -143,17 +143,4 @@ class Page5Bands(Gtk.Box):
         print(value_str)
         value_display = f'{convert_to_MKG(value)}Ω ±{tolerance}%'
         self.result_label.set_label(str = value_display)
-
-class KeyValuePair(GObject.Object):
-    key = GObject.Property(
-        type=str,
-        flags=GObject.ParamFlags.READWRITE,
-    )
-    value = GObject.Property(
-        type=str,
-        nick='Value',
-        blurb='Value',
-        flags=GObject.ParamFlags.READWRITE,
-        default='',
-    )
 

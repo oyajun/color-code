@@ -1,4 +1,5 @@
 import decimal
+from gi.repository import GObject
 
 def convert_to_MKG(value):
     if value < 1000:
@@ -21,3 +22,16 @@ def delete_zero(value):
         return str(value.quantize(decimal.Decimal('1.000')))
     else:
         return str(value)
+
+class KeyValuePair(GObject.Object):
+    key = GObject.Property(
+        type=str,
+        flags=GObject.ParamFlags.READWRITE,
+    )
+    value = GObject.Property(
+        type=str,
+        nick='Value',
+        blurb='Value',
+        flags=GObject.ParamFlags.READWRITE,
+        default='',
+    )
