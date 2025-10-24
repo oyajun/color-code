@@ -1,4 +1,4 @@
-# page_4_bands.py
+# page_6_bands.py
 #
 # Copyright 2025 oyajun
 #
@@ -20,6 +20,10 @@
 from gi.repository import Adw, Gtk, Gdk, Gio
 import decimal
 from .utils import *
+from .drop_down_value import DropDownValue
+from .drop_down_multiplier import DropDownMultiplier
+from .drop_down_tolerance import DropDownTolerance
+from .drop_down_tcr import DropDownTcr
 
 @Gtk.Template(resource_path='/com/oyajun/ColorCode/page_6_bands.ui')
 class Page6Bands(Gtk.Box):
@@ -29,6 +33,8 @@ class Page6Bands(Gtk.Box):
     drop_down_2 = Gtk.Template.Child()
     drop_down_3 = Gtk.Template.Child()
     drop_down_4 = Gtk.Template.Child()
+    drop_down_5 = Gtk.Template.Child()
+    drop_down_6 = Gtk.Template.Child()
 
     result_label = Gtk.Template.Child()
 
@@ -39,84 +45,20 @@ class Page6Bands(Gtk.Box):
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
 
-        list_store_expression = Gtk.PropertyExpression.new(
-            KeyValuePair,
-            None,
-            'value',
-        )
-
-        value_model = Gio.ListStore(item_type=KeyValuePair)
-        value_model.splice(
-            0, 0,
-            [
-                KeyValuePair(key='0', value=_('⬛ Black')),
-                KeyValuePair(key='1', value=_('🟫 Brown')),
-                KeyValuePair(key='2', value=_('🟥 Red')),
-                KeyValuePair(key='3', value=_('🟧 Orange')),
-                KeyValuePair(key='4', value=_('🟨 Yellow')),
-                KeyValuePair(key='5', value=_('🟩 Green')),
-                KeyValuePair(key='6', value=_('🟦 Blue')),
-                KeyValuePair(key='7', value=_('🟪 Violet')),
-                KeyValuePair(key='8', value=_('🩶 Gray')),
-                KeyValuePair(key='9', value=_('⬜ White')),
-            ],
-        )
-
-        multiplier_model = Gio.ListStore(item_type=KeyValuePair)
-        multiplier_model.splice(
-            0, 0,
-            [
-                KeyValuePair(key='0', value=_('⬛ Black')),
-                KeyValuePair(key='1', value=_('🟫 Brown')),
-                KeyValuePair(key='2', value=_('🟥 Red')),
-                KeyValuePair(key='3', value=_('🟧 Orange')),
-                KeyValuePair(key='4', value=_('🟨 Yellow')),
-                KeyValuePair(key='5', value=_('🟩 Green')),
-                KeyValuePair(key='6', value=_('🟦 Blue')),
-                KeyValuePair(key='7', value=_('🟪 Violet')),
-                KeyValuePair(key='8', value=_('🩶 Gray')),
-                KeyValuePair(key='9', value=_('⬜ White')),
-                KeyValuePair(key='-1', value=_('🥇 Gold')),
-                KeyValuePair(key='-2', value=_('🥈 Silver')),
-                KeyValuePair(key='-3', value=_('🩷 Pink')),
-            ],
-        )
-
-        tolerance_model = Gio.ListStore(item_type=KeyValuePair)
-        tolerance_model.splice(
-            0, 0,
-            [
-                KeyValuePair(key='1', value=_('🟫 Brown')),
-                KeyValuePair(key='2', value=_('🟥 Red')),
-                KeyValuePair(key='0.05', value=_('🟧 Orange')),
-                KeyValuePair(key='0.5', value=_('🟩 Green')),
-                KeyValuePair(key='0.25', value=_('🟦 Blue')),
-                KeyValuePair(key='0.1', value=_('🟪 Violet')),
-                KeyValuePair(key='5', value=_('🥇 Gold')),
-                KeyValuePair(key='10', value=_('🥈 Silver')),
-            ],
-        )
-
-        self.drop_down_1.set_expression(list_store_expression)
-        self.drop_down_2.set_expression(list_store_expression)
-        self.drop_down_3.set_expression(list_store_expression)
-        self.drop_down_4.set_expression(list_store_expression)
-
-        self.drop_down_1.set_model(value_model)
-        self.drop_down_2.set_model(value_model)
-        self.drop_down_3.set_model(multiplier_model)
-        self.drop_down_4.set_model(tolerance_model)
-
         self.drop_down_1.connect('notify::selected-item', self.on_selected_item)
         self.drop_down_2.connect('notify::selected-item', self.on_selected_item)
         self.drop_down_3.connect('notify::selected-item', self.on_selected_item)
         self.drop_down_4.connect('notify::selected-item', self.on_selected_item)
+        self.drop_down_5.connect('notify::selected-item', self.on_selected_item)
+        self.drop_down_6.connect('notify::selected-item', self.on_selected_item)
 
         # init
         self.drop_down_1.set_selected(1)
         self.drop_down_2.set_selected(0)
-        self.drop_down_3.set_selected(2)
-        self.drop_down_4.set_selected(6)
+        self.drop_down_3.set_selected(6)
+        self.drop_down_4.set_selected(2)
+        self.drop_down_5.set_selected(6)
+        self.drop_down_5.set_selected(20)
 
         self.calculate()
 
@@ -132,15 +74,17 @@ class Page6Bands(Gtk.Box):
     def calculate(self):
         value1 = decimal.Decimal(self.drop_down_1.get_selected_item().key)
         value2 = decimal.Decimal(self.drop_down_2.get_selected_item().key)
-        multiplier = decimal.Decimal(self.drop_down_3.get_selected_item().key)
-        tolerance = self.drop_down_4.get_selected_item().key
+        value3 = decimal.Decimal(self.drop_down_3.get_selected_item().key)
+        multiplier = decimal.Decimal(self.drop_down_4.get_selected_item().key)
+        tolerance = self.drop_down_5.get_selected_item().key
+        tcr = self.drop_down_6.get_selected_item().key
 
-        value = (value1*10 + value2) * decimal.Decimal('10') ** multiplier
+        value = (value1*100 + value2*10 + value3) * decimal.Decimal('10') ** multiplier
         print(value)
         print(convert_to_MKG(value))
         # × U+00D7
-        value_str = f'{value1*10 + value2} × 10^{multiplier}Ω ±{tolerance}%'
+        value_str = f'{value1*100 + value2*10 + value3} × 10^{multiplier}Ω ±{tolerance}% ±{tcr}ppm/K'
         print(value_str)
-        value_display = f'{convert_to_MKG(value)}Ω ±{tolerance}%'
+        value_display = f'{convert_to_MKG(value)}Ω ±{tolerance}% ±{tcr}ppm/K'
         self.result_label.set_label(str = value_display)
 
