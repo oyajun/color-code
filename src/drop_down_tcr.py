@@ -19,6 +19,8 @@
 
 from gi.repository import Gtk, Gio
 from .utils import KeyValuePair
+from .colors import *
+
 
 @Gtk.Template(resource_path='/com/oyajun/ColorCode/drop_down_tcr.ui')
 class DropDownTcr(Gtk.DropDown):
@@ -37,15 +39,15 @@ class DropDownTcr(Gtk.DropDown):
         value_model.splice(
             0, 0,
             [
-                KeyValuePair(key='250', value=_('⬛ Black')),
-                KeyValuePair(key='100', value=_('🟫 Brown')),
-                KeyValuePair(key='50', value=_('🟥 Red')),
-                KeyValuePair(key='15', value=_('🟧 Orange')),
-                KeyValuePair(key='25', value=_('🟨 Yellow')),
-                KeyValuePair(key='20', value=_('🟩 Green')),
-                KeyValuePair(key='10', value=_('🟦 Blue')),
-                KeyValuePair(key='5', value=_('🟪 Violet')),
-                KeyValuePair(key='1', value=_('🩶 Gray')),
+                KeyValuePair(key='250', value=EMOJI_BLACK),
+                KeyValuePair(key='100', value=EMOJI_BROWN),
+                KeyValuePair(key='50', value=EMOJI_RED),
+                KeyValuePair(key='15', value=EMOJI_ORANGE),
+                KeyValuePair(key='25', value=EMOJI_YELLOW),
+                KeyValuePair(key='20', value=EMOJI_GREEN),
+                KeyValuePair(key='10', value=EMOJI_BLUE),
+                KeyValuePair(key='5', value=EMOJI_VIOLET),
+                KeyValuePair(key='1', value=EMOJI_GRAY),
             ],
         )
 

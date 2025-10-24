@@ -1,6 +1,6 @@
 using Gtk 4.0;
 
-template $Page4Bands : Gtk.Box {
+template $Page4Bands: Gtk.Box {
   orientation: vertical;
   halign: center;
   valign: center;
@@ -15,7 +15,10 @@ template $Page4Bands : Gtk.Box {
 
     center-widget: Label result_label {
       width-request: 200;
-      styles [ "title-1" ]
+
+      styles [
+        "title-1"
+      ]
     };
 
     end-widget: Button copy_button {
@@ -29,9 +32,20 @@ template $Page4Bands : Gtk.Box {
     halign: center;
     spacing: 10;
 
-    $DropDownValue drop_down_1 { width-request: 120; }
-    $DropDownValue drop_down_2 { width-request: 120; }
-    $DropDownMultiplier drop_down_3 { width-request: 120; }
-    $DropDownTolerance drop_down_4 { width-request: 120; }
+    $DropDownValue drop_down_1 {
+      width-request: 120;
+    }
+
+    $DropDownValue drop_down_2 {
+      width-request: 120;
+    }
+
+    $DropDownMultiplier drop_down_3 {
+      width-request: 120;
+    }
+
+    $DropDownTolerance drop_down_4 {
+      width-request: 120;
+    }
   }
 }

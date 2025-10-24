@@ -19,6 +19,8 @@
 
 from gi.repository import Gtk, Gio
 from .utils import KeyValuePair
+from .colors import *
+
 
 @Gtk.Template(resource_path='/com/oyajun/ColorCode/drop_down_value.ui')
 class DropDownValue(Gtk.DropDown):
@@ -37,16 +39,16 @@ class DropDownValue(Gtk.DropDown):
         value_model.splice(
             0, 0,
             [
-                KeyValuePair(key='0', value=_('⬛ Black')),
-                KeyValuePair(key='1', value=_('🟫 Brown')),
-                KeyValuePair(key='2', value=_('🟥 Red')),
-                KeyValuePair(key='3', value=_('🟧 Orange')),
-                KeyValuePair(key='4', value=_('🟨 Yellow')),
-                KeyValuePair(key='5', value=_('🟩 Green')),
-                KeyValuePair(key='6', value=_('🟦 Blue')),
-                KeyValuePair(key='7', value=_('🟪 Violet')),
-                KeyValuePair(key='8', value=_('🩶 Gray')),
-                KeyValuePair(key='9', value=_('⬜ White')),
+                KeyValuePair(key='0', value=EMOJI_BLACK),
+                KeyValuePair(key='1', value=EMOJI_BROWN),
+                KeyValuePair(key='2', value=EMOJI_RED),
+                KeyValuePair(key='3', value=EMOJI_ORANGE),
+                KeyValuePair(key='4', value=EMOJI_YELLOW),
+                KeyValuePair(key='5', value=EMOJI_GREEN),
+                KeyValuePair(key='6', value=EMOJI_BLUE),
+                KeyValuePair(key='7', value=EMOJI_VIOLET),
+                KeyValuePair(key='8', value=EMOJI_GRAY),
+                KeyValuePair(key='9', value=EMOJI_WHITE),
             ],
         )
 

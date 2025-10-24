@@ -19,6 +19,8 @@
 
 from gi.repository import Gtk, Gio
 from .utils import KeyValuePair
+from .colors import *
+
 
 @Gtk.Template(resource_path='/com/oyajun/ColorCode/drop_down_tolerance.ui')
 class DropDownTolerance(Gtk.DropDown):
@@ -37,14 +39,14 @@ class DropDownTolerance(Gtk.DropDown):
         tolerance_model.splice(
             0, 0,
             [
-                KeyValuePair(key='1', value=_('🟫 Brown')),
-                KeyValuePair(key='2', value=_('🟥 Red')),
-                KeyValuePair(key='0.05', value=_('🟧 Orange')),
-                KeyValuePair(key='0.5', value=_('🟩 Green')),
-                KeyValuePair(key='0.25', value=_('🟦 Blue')),
-                KeyValuePair(key='0.1', value=_('🟪 Violet')),
-                KeyValuePair(key='5', value=_('🥇 Gold')),
-                KeyValuePair(key='10', value=_('🥈 Silver')),
+                KeyValuePair(key='1', value=EMOJI_BROWN),
+                KeyValuePair(key='2', value=EMOJI_RED),
+                KeyValuePair(key='0.05', value=EMOJI_ORANGE),
+                KeyValuePair(key='0.5', value=EMOJI_GREEN),
+                KeyValuePair(key='0.25', value=EMOJI_BLUE),
+                KeyValuePair(key='0.1', value=EMOJI_VIOLET),
+                KeyValuePair(key='5', value=EMOJI_GOLD),
+                KeyValuePair(key='10', value=EMOJI_SILVER),
             ],
         )
 

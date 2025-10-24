@@ -12,7 +12,7 @@ blueprints = custom_target('blueprints',
     'drop_down_value.blp',
     'drop_down_multiplier.blp',
     'drop_down_tolerance.blp',
-    'drop_down_tcr.blp'
+    'drop_down_tcr.blp',
   ),
   output: '.',
   command: [find_program('blueprint-compiler'), 'batch-compile', '@OUTPUT@', '@CURRENT_SOURCE_DIR@', '@INPUT@'],
@@ -54,7 +54,8 @@ color_code_sources = [
   'drop_down_value.py',
   'drop_down_multiplier.py',
   'drop_down_tolerance.py',
-  'drop_down_tcr.py'
+  'drop_down_tcr.py',
+  'colors.py',
 ]
 
 install_data(color_code_sources, install_dir: moduledir)
