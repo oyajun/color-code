@@ -3,9 +3,9 @@ using Adw 1;
 
 template $ColorCodeWindow : Adw.ApplicationWindow {
   default-width: 794;
-  default-height: 350;
-  width-request: 280;
-  height-request: 350;
+  default-height: 428;
+  width-request: 428;
+  height-request: 428;
   title: _("Color Code");
 
   Adw.Breakpoint breakpoint_narrow {
@@ -15,6 +15,8 @@ template $ColorCodeWindow : Adw.ApplicationWindow {
       header_bar.title-widget: null;
       switcher_bar.reveal: true;
       page4bands.dropdown_orientation: vertical;
+      page5bands.dropdown_orientation: vertical;
+      page6bands.dropdown_orientation: vertical;
     }
   }
 
@@ -44,7 +46,7 @@ template $ColorCodeWindow : Adw.ApplicationWindow {
         icon-name: "edit-copy-symbolic";
         use-underline: true;
 
-        child: $Page4Bands page4bands{};
+        child: $Page4Bands page4bands {};
       }
 
       Adw.ViewStackPage page2 {
@@ -53,7 +55,7 @@ template $ColorCodeWindow : Adw.ApplicationWindow {
         icon-name: "edit-copy-symbolic";
         use-underline: true;
 
-        child: $Page5Bands {};
+        child: $Page5Bands page5bands {};
       }
 
       Adw.ViewStackPage page3 {
@@ -62,7 +64,7 @@ template $ColorCodeWindow : Adw.ApplicationWindow {
         icon-name: "edit-copy-symbolic";
         use-underline: true;
 
-        child: $Page6Bands {};
+        child: $Page6Bands page6bands {};
       }
     };
 
