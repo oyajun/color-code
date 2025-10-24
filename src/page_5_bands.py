@@ -54,11 +54,11 @@ class Page5Bands(Gtk.Box):
         self.drop_down_5.connect('notify::selected-item', self.on_selected_item)
 
         # init
-        self.drop_down_1.set_selected(1)
-        self.drop_down_2.set_selected(0)
-        self.drop_down_3.set_selected(6)
-        self.drop_down_4.set_selected(2)
-        self.drop_down_5.set_selected(6)
+        self.drop_down_1.set_selected(4)
+        self.drop_down_2.set_selected(7)
+        self.drop_down_3.set_selected(0)
+        self.drop_down_4.set_selected(1)
+        self.drop_down_5.set_selected(0)
 
 
         self.calculate()
