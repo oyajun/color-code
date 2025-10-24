@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-25 00:21+0900\n"
+"POT-Creation-Date: 2025-10-25 00:34+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,6 +118,10 @@ msgstr ""
 
 #: src/colors.py:15
 msgid "🩷 Pink"
+msgstr ""
+
+#: src/page_4_bands.blp:26 src/page_5_bands.blp:23 src/page_6_bands.blp:23
+msgid "Copy"
 msgstr ""
 
 #: src/gtk/help-overlay.blp:11

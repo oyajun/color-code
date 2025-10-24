@@ -8,11 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-04 21:06+0900\n"
+"POT-Creation-Date: 2025-10-25 00:34+0900\n"
 "PO-Revision-Date: 2024-08-04 21:15+0900\n"
 "Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
-"Language-Team: Brazilian Portuguese <ldpbr-translation@lists.sourceforge."
-"net>\n"
+"Language-Team: Brazilian Portuguese <ldpbr-"
+"translation@lists.sourceforge.net>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -20,8 +20,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: data/com.oyajun.ColorCode.desktop.in:3
-#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/main.py:55 src/window.blp:10
+#: data/com.oyajun.ColorCode.desktop.in:2
+#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/main.py:55 src/window.blp:9
 msgid "Color Code"
 msgstr "Código de Cor"
 
@@ -43,77 +43,105 @@ msgstr ""
 #. Example)
 #. oyajun <jun@example.com>\n
 #. joe <joe@example.com>
-#: src/main.py:65
+#: src/main.py:66
 msgid "translator_credits"
 msgstr "Gabriel de Moura <smolblackcat@proton.me>"
 
-#: src/window.py:51 src/window.py:68
-msgid "⬛ Black"
-msgstr "⬛ Preto"
-
-#: src/window.py:52 src/window.py:69 src/window.py:88
-msgid "🟫 Brown"
-msgstr "🟫 Marrom"
-
-#: src/window.py:53 src/window.py:70 src/window.py:89
-msgid "🟥 Red"
-msgstr "🟥 Vermelho"
-
-#: src/window.py:54 src/window.py:71 src/window.py:90
-msgid "🟧 Orange"
-msgstr "🟧 Laranja"
-
-#: src/window.py:55 src/window.py:72
-msgid "🟨 Yellow"
-msgstr "🟨 Amarelo"
-
-#: src/window.py:56 src/window.py:73 src/window.py:91
-msgid "🟩 Green"
-msgstr "🟩 Verde"
-
-#: src/window.py:57 src/window.py:74 src/window.py:92
-msgid "🟦 Blue"
-msgstr "🟦 Azul"
-
-#: src/window.py:58 src/window.py:75 src/window.py:93
-msgid "🟪 Violet"
-msgstr "🟪 Violeta"
-
-#: src/window.py:59 src/window.py:76
-msgid "🩶 Gray"
-msgstr "🩶 Cinza"
-
-#: src/window.py:60 src/window.py:77
-msgid "⬜ White"
-msgstr "⬜ Branco"
-
-#: src/window.py:78 src/window.py:94
-msgid "🥇 Gold"
-msgstr "🥇 Ouro"
-
-#: src/window.py:79 src/window.py:95
-msgid "🥈 Silver"
-msgstr "🥈 Prata"
-
-#: src/window.py:80
-msgid "🩷 Pink"
-msgstr "🩷 Rosa"
-
-#: src/window.blp:27
+#: src/window.blp:35
 msgid "Menu"
 msgstr "Menu"
 
-#: src/window.blp:51
-msgid "Copy"
-msgstr "Copiar"
+#: src/window.blp:45
+msgid "_4 Bands"
+msgstr ""
 
-#: src/window.blp:89
+#: src/window.blp:54
+msgid "_5 Bands"
+msgstr ""
+
+#: src/window.blp:63
+msgid "_6 Bands"
+msgstr ""
+
+#: src/window.blp:82
 msgid "_Keyboard Shortcuts"
 msgstr "_Atalhos de Teclado"
 
-#: src/window.blp:94
+#: src/window.blp:86
 msgid "_About Color Code"
 msgstr "_Sobre Color Code"
+
+#: src/colors.py:3
+msgid "⬛ Black"
+msgstr "⬛ Preto"
+
+#: src/colors.py:4
+msgid "🟫 Brown"
+msgstr "🟫 Marrom"
+
+#: src/colors.py:5
+msgid "🟥 Red"
+msgstr "🟥 Vermelho"
+
+#: src/colors.py:6
+msgid "🟧 Orange"
+msgstr "🟧 Laranja"
+
+#: src/colors.py:7
+msgid "🟨 Yellow"
+msgstr "🟨 Amarelo"
+
+#: src/colors.py:8
+msgid "🟩 Green"
+msgstr "🟩 Verde"
+
+#: src/colors.py:9
+msgid "🟦 Blue"
+msgstr "🟦 Azul"
+
+#: src/colors.py:10
+msgid "🟪 Violet"
+msgstr "🟪 Violeta"
+
+#: src/colors.py:11
+msgid "🩶 Gray"
+msgstr "🩶 Cinza"
+
+#: src/colors.py:12
+msgid "⬜ White"
+msgstr "⬜ Branco"
+
+#: src/colors.py:13
+msgid "🥇 Gold"
+msgstr "🥇 Ouro"
+
+#: src/colors.py:14
+msgid "🥈 Silver"
+msgstr "🥈 Prata"
+
+#: src/colors.py:15
+msgid "🩷 Pink"
+msgstr "🩷 Rosa"
+
+#: src/page_4_bands.blp:26 src/page_5_bands.blp:23 src/page_6_bands.blp:23
+msgid "Copy"
+msgstr "Copiar"
+
+#: src/gtk/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr ""
+
+#: src/gtk/help-overlay.blp:14
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "_Atalhos de Teclado"
+
+#: src/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr ""
 
 #~ msgid "Calculate resistance from color codes"
 #~ msgstr "Calcule a resistência apartir de código de cores"

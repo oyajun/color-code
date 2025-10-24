@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: color-code\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-04 21:06+0900\n"
+"POT-Creation-Date: 2025-10-25 00:34+0900\n"
 "PO-Revision-Date: 2024-08-04 21:19+0900\n"
 "Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
 "Language-Team: Hindi\n"
@@ -19,8 +19,8 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: data/com.oyajun.ColorCode.desktop.in:3 data/com.oyajun.ColorCode.metainfo.xml.in:3
-#: src/main.py:55 src/window.blp:10
+#: data/com.oyajun.ColorCode.desktop.in:2
+#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/main.py:55 src/window.blp:9
 msgid "Color Code"
 msgstr "Color Code"
 
@@ -30,9 +30,10 @@ msgstr "प्रतिरोध मान के लिए रंग कोड"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:6
 msgid ""
-"Can't you understand Color Code? This app converts to the resistance value from "
-"the color code."
-msgstr "क्या आप रंग कोड नहीं समझ सकते? यह ऐप रंग कोड से प्रतिरोध मान में परिवर्तित होता है।"
+"Can't you understand Color Code? This app converts to the resistance value "
+"from the color code."
+msgstr ""
+"क्या आप रंग कोड नहीं समझ सकते? यह ऐप रंग कोड से प्रतिरोध मान में परिवर्तित होता है।"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:25
 msgid "The screenshot of \"Color Code\""
@@ -42,74 +43,102 @@ msgstr "\"Color Code\" का स्क्रीनशॉट"
 #. Example)
 #. oyajun <jun@example.com>\n
 #. joe <joe@example.com>
-#: src/main.py:65
+#: src/main.py:66
 msgid "translator_credits"
 msgstr "Scrambled777 <weblate.scrambled777@simplelogin.com>"
 
-#: src/window.py:51 src/window.py:68
-msgid "⬛ Black"
-msgstr "⬛ काला"
-
-#: src/window.py:52 src/window.py:69 src/window.py:88
-msgid "🟫 Brown"
-msgstr "🟫 भूरा"
-
-#: src/window.py:53 src/window.py:70 src/window.py:89
-msgid "🟥 Red"
-msgstr "🟥 लाल"
-
-#: src/window.py:54 src/window.py:71 src/window.py:90
-msgid "🟧 Orange"
-msgstr "🟧 नारंगी"
-
-#: src/window.py:55 src/window.py:72
-msgid "🟨 Yellow"
-msgstr "🟨 पीला"
-
-#: src/window.py:56 src/window.py:73 src/window.py:91
-msgid "🟩 Green"
-msgstr "🟩 हरा"
-
-#: src/window.py:57 src/window.py:74 src/window.py:92
-msgid "🟦 Blue"
-msgstr "🟦 नीला"
-
-#: src/window.py:58 src/window.py:75 src/window.py:93
-msgid "🟪 Violet"
-msgstr "🟪 बैंगनी"
-
-#: src/window.py:59 src/window.py:76
-msgid "🩶 Gray"
-msgstr "🩶 स्लेटी"
-
-#: src/window.py:60 src/window.py:77
-msgid "⬜ White"
-msgstr "⬜ सफेद"
-
-#: src/window.py:78 src/window.py:94
-msgid "🥇 Gold"
-msgstr "🥇 सुनहरा"
-
-#: src/window.py:79 src/window.py:95
-msgid "🥈 Silver"
-msgstr "🥈 चांदी"
-
-#: src/window.py:80
-msgid "🩷 Pink"
-msgstr "🩷 गुलाबी"
-
-#: src/window.blp:27
+#: src/window.blp:35
 msgid "Menu"
 msgstr "मेनू"
 
-#: src/window.blp:51
-msgid "Copy"
-msgstr "कॉपी करें"
+#: src/window.blp:45
+msgid "_4 Bands"
+msgstr ""
 
-#: src/window.blp:89
+#: src/window.blp:54
+msgid "_5 Bands"
+msgstr ""
+
+#: src/window.blp:63
+msgid "_6 Bands"
+msgstr ""
+
+#: src/window.blp:82
 msgid "_Keyboard Shortcuts"
 msgstr "कीबोर्ड शॉर्टकट (_K)"
 
-#: src/window.blp:94
+#: src/window.blp:86
 msgid "_About Color Code"
 msgstr "Color Code के बारे में (_A)"
+
+#: src/colors.py:3
+msgid "⬛ Black"
+msgstr "⬛ काला"
+
+#: src/colors.py:4
+msgid "🟫 Brown"
+msgstr "🟫 भूरा"
+
+#: src/colors.py:5
+msgid "🟥 Red"
+msgstr "🟥 लाल"
+
+#: src/colors.py:6
+msgid "🟧 Orange"
+msgstr "🟧 नारंगी"
+
+#: src/colors.py:7
+msgid "🟨 Yellow"
+msgstr "🟨 पीला"
+
+#: src/colors.py:8
+msgid "🟩 Green"
+msgstr "🟩 हरा"
+
+#: src/colors.py:9
+msgid "🟦 Blue"
+msgstr "🟦 नीला"
+
+#: src/colors.py:10
+msgid "🟪 Violet"
+msgstr "🟪 बैंगनी"
+
+#: src/colors.py:11
+msgid "🩶 Gray"
+msgstr "🩶 स्लेटी"
+
+#: src/colors.py:12
+msgid "⬜ White"
+msgstr "⬜ सफेद"
+
+#: src/colors.py:13
+msgid "🥇 Gold"
+msgstr "🥇 सुनहरा"
+
+#: src/colors.py:14
+msgid "🥈 Silver"
+msgstr "🥈 चांदी"
+
+#: src/colors.py:15
+msgid "🩷 Pink"
+msgstr "🩷 गुलाबी"
+
+#: src/page_4_bands.blp:26 src/page_5_bands.blp:23 src/page_6_bands.blp:23
+msgid "Copy"
+msgstr "कॉपी करें"
+
+#: src/gtk/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr ""
+
+#: src/gtk/help-overlay.blp:14
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "कीबोर्ड शॉर्टकट (_K)"
+
+#: src/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr ""
