@@ -1,0 +1,39 @@
+using Gtk 4.0;
+
+template $Page6Bands : Gtk.Box {
+  orientation: vertical;
+  halign: center;
+  valign: center;
+  spacing: 24;
+  margin-top: 12;
+  margin-bottom: 12;
+  margin-start: 12;
+  margin-end: 12;
+
+  CenterBox {
+    halign: center;
+
+    center-widget: Label result_label {
+      width-request: 370;
+      styles [ "title-1" ]
+    };
+
+    end-widget: Button copy_button {
+      icon-name: "edit-copy-symbolic";
+      tooltip-text: _("Copy");
+      valign: center;
+    };
+  }
+
+  Box drop_down_box {
+    halign: center;
+    spacing: 10;
+
+    $DropDownValue drop_down_1 { width-request: 120; }
+    $DropDownValue drop_down_2 { width-request: 120; }
+    $DropDownValue drop_down_3 { width-request: 120; }
+    $DropDownMultiplier drop_down_4 { width-request: 120; }
+    $DropDownTolerance drop_down_5 { width-request: 120; }
+    $DropDownTcr drop_down_6 { width-request: 120; }
+  }
+}

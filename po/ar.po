@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: unnamed project\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-04 21:06+0900\n"
+"POT-Creation-Date: 2025-10-25 00:34+0900\n"
 "PO-Revision-Date: 2024-08-04 21:21+0900\n"
 "Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
 "Language-Team: Arabic\n"
@@ -19,8 +19,8 @@ msgstr ""
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 "X-Generator: Poedit 3.4.4\n"
 
-#: data/com.oyajun.ColorCode.desktop.in:3
-#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/main.py:55 src/window.blp:10
+#: data/com.oyajun.ColorCode.desktop.in:2
+#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/main.py:55 src/window.blp:9
 msgid "Color Code"
 msgstr "رمز الألوان"
 
@@ -42,77 +42,105 @@ msgstr ""
 #. Example)
 #. oyajun <jun@example.com>\n
 #. joe <joe@example.com>
-#: src/main.py:65
+#: src/main.py:66
 msgid "translator_credits"
 msgstr "zefr0x <zer0-x.7ty50@aleeas.com>"
 
-#: src/window.py:51 src/window.py:68
-msgid "⬛ Black"
-msgstr "⬛ أسود"
-
-#: src/window.py:52 src/window.py:69 src/window.py:88
-msgid "🟫 Brown"
-msgstr "🟫 بُني"
-
-#: src/window.py:53 src/window.py:70 src/window.py:89
-msgid "🟥 Red"
-msgstr "🟥 أحمر"
-
-#: src/window.py:54 src/window.py:71 src/window.py:90
-msgid "🟧 Orange"
-msgstr "🟧 برتقالي"
-
-#: src/window.py:55 src/window.py:72
-msgid "🟨 Yellow"
-msgstr "🟨 أصفر"
-
-#: src/window.py:56 src/window.py:73 src/window.py:91
-msgid "🟩 Green"
-msgstr "🟩 أخضر"
-
-#: src/window.py:57 src/window.py:74 src/window.py:92
-msgid "🟦 Blue"
-msgstr "🟦 أزرق"
-
-#: src/window.py:58 src/window.py:75 src/window.py:93
-msgid "🟪 Violet"
-msgstr "🟪 بنفسجي"
-
-#: src/window.py:59 src/window.py:76
-msgid "🩶 Gray"
-msgstr "🩶 رمادي"
-
-#: src/window.py:60 src/window.py:77
-msgid "⬜ White"
-msgstr "⬜ أبيض"
-
-#: src/window.py:78 src/window.py:94
-msgid "🥇 Gold"
-msgstr "🥇 ذهبي"
-
-#: src/window.py:79 src/window.py:95
-msgid "🥈 Silver"
-msgstr "🥈 فضي"
-
-#: src/window.py:80
-msgid "🩷 Pink"
-msgstr "🩷 وردي"
-
-#: src/window.blp:27
+#: src/window.blp:35
 msgid "Menu"
 msgstr "القائمة"
 
-#: src/window.blp:51
-msgid "Copy"
-msgstr "اِنسَخ"
+#: src/window.blp:45
+msgid "_4 Bands"
+msgstr ""
 
-#: src/window.blp:89
+#: src/window.blp:54
+msgid "_5 Bands"
+msgstr ""
+
+#: src/window.blp:63
+msgid "_6 Bands"
+msgstr ""
+
+#: src/window.blp:82
 msgid "_Keyboard Shortcuts"
 msgstr "اِختصارات لوحة الم_فاتيح"
 
-#: src/window.blp:94
+#: src/window.blp:86
 msgid "_About Color Code"
 msgstr "َ_حول رمز الألوان"
+
+#: src/colors.py:3
+msgid "⬛ Black"
+msgstr "⬛ أسود"
+
+#: src/colors.py:4
+msgid "🟫 Brown"
+msgstr "🟫 بُني"
+
+#: src/colors.py:5
+msgid "🟥 Red"
+msgstr "🟥 أحمر"
+
+#: src/colors.py:6
+msgid "🟧 Orange"
+msgstr "🟧 برتقالي"
+
+#: src/colors.py:7
+msgid "🟨 Yellow"
+msgstr "🟨 أصفر"
+
+#: src/colors.py:8
+msgid "🟩 Green"
+msgstr "🟩 أخضر"
+
+#: src/colors.py:9
+msgid "🟦 Blue"
+msgstr "🟦 أزرق"
+
+#: src/colors.py:10
+msgid "🟪 Violet"
+msgstr "🟪 بنفسجي"
+
+#: src/colors.py:11
+msgid "🩶 Gray"
+msgstr "🩶 رمادي"
+
+#: src/colors.py:12
+msgid "⬜ White"
+msgstr "⬜ أبيض"
+
+#: src/colors.py:13
+msgid "🥇 Gold"
+msgstr "🥇 ذهبي"
+
+#: src/colors.py:14
+msgid "🥈 Silver"
+msgstr "🥈 فضي"
+
+#: src/colors.py:15
+msgid "🩷 Pink"
+msgstr "🩷 وردي"
+
+#: src/page_4_bands.blp:26 src/page_5_bands.blp:23 src/page_6_bands.blp:23
+msgid "Copy"
+msgstr "اِنسَخ"
+
+#: src/gtk/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr ""
+
+#: src/gtk/help-overlay.blp:14
+#, fuzzy
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "اِختصارات لوحة الم_فاتيح"
+
+#: src/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr ""
 
 #~ msgid "Calculate resistance from color codes"
 #~ msgstr "اِحسب المقاومة من رمز الألوان"

@@ -1,25 +1,33 @@
 using Gtk 4.0;
 using Adw 1;
 
-template $ColorCodeWindow: Adw.ApplicationWindow {
-  default-width: 600;
-  default-height: 350;
-  width-request: 280;
-  height-request: 350;
-
+template $ColorCodeWindow : Adw.ApplicationWindow {
+  default-width: 794;
+  default-height: 428;
+  width-request: 428;
+  height-request: 428;
   title: _("Color Code");
 
-  Adw.Breakpoint {
-          condition ("max-width: 520sp")
+  Adw.Breakpoint breakpoint_narrow {
+    condition ("max-width: 793px")
 
-          setters {
-            drop_down_box.orientation: vertical;
-          }
-      }
+    setters {
+      header_bar.title-widget: null;
+      switcher_bar.reveal: true;
+      page4bands.dropdown_orientation: vertical;
+      page5bands.dropdown_orientation: vertical;
+      page6bands.dropdown_orientation: vertical;
+    }
+  }
 
   content: Adw.ToolbarView {
     [top]
     Adw.HeaderBar header_bar {
+      title-widget: Adw.ViewSwitcher switcher_title {
+        stack: stack;
+        policy: wide;
+      };
+
       [end]
       MenuButton {
         primary: true;
@@ -29,67 +37,51 @@ template $ColorCodeWindow: Adw.ApplicationWindow {
       }
     }
 
-    content: Box {
-      orientation: vertical;
-      halign: center;
-      valign: center;
+    content: Adw.ViewStack stack {
+      vexpand: true;
 
-      CenterBox {
-        halign: center;
-        valign: center;
-        margin-bottom: 45;
+      Adw.ViewStackPage page1 {
+        name: "page1";
+        title: _("_4 Bands");
+        icon-name: "edit-copy-symbolic";
+        use-underline: true;
 
-        center-widget: Label result_label {
-          width-request: 200;
-          styles [
-            "title-1"
-          ]
-        };
-
-        end-widget: Button copy_button {
-          icon-name: "edit-copy-symbolic";
-          tooltip-text: _("Copy");
-        };
+        child: $Page4Bands page4bands {};
       }
 
-      Box drop_down_box {
-        halign: center;
-        valign: center;
-        spacing: 10;
+      Adw.ViewStackPage page2 {
+        name: "page2";
+        title: _("_5 Bands");
+        icon-name: "edit-copy-symbolic";
+        use-underline: true;
 
-        DropDown drop_down_1 {
-          width-request: 120;
-        }
-
-        DropDown drop_down_2 {
-          width-request: 120;
-        }
-
-        DropDown drop_down_3 {
-          width-request: 120;
-        }
-
-        DropDown drop_down_4 {
-          width-request: 120;
-        }
+        child: $Page5Bands page5bands {};
       }
 
+      Adw.ViewStackPage page3 {
+        name: "page3";
+        title: _("_6 Bands");
+        icon-name: "edit-copy-symbolic";
+        use-underline: true;
+
+        child: $Page6Bands page6bands {};
+      }
     };
+
+    [bottom]
+    Adw.ViewSwitcherBar switcher_bar {
+      stack: stack;
+      reveal: false;
+    }
   };
 }
 
 menu primary_menu {
   section {
-    // item {
-    //   label: _("_Preferences");
-    //   action: "app.preferences";
-    // }
-
     item {
       label: _("_Keyboard Shortcuts");
       action: "win.show-help-overlay";
     }
-
     item {
       label: _("_About Color Code");
       action: "app.about";

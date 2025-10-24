@@ -1,7 +1,7 @@
 {
     "app-id": "com.oyajun.ColorCode",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "48",
+    "runtime-version": "49",
     "sdk": "org.gnome.Sdk",
     "command": "color-code",
     "finish-args": [
@@ -34,7 +34,7 @@
                 {
                     "type": "git",
                     "url": "https://gitlab.gnome.org/jwestman/blueprint-compiler.git",
-                    "tag": "v0.16.0"
+                    "tag": "v0.18.0"
                 }
             ]
         },
