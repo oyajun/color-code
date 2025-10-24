@@ -9,12 +9,12 @@ template $ColorCodeWindow : Adw.ApplicationWindow {
   title: _("Color Code");
 
   Adw.Breakpoint breakpoint_narrow {
-    condition ("max-width: 550px")
+    condition ("max-width: 793px")
 
     setters {
       header_bar.title-widget: null;
       switcher_bar.reveal: true;
-      //drop_down_box.orientation: vertical;
+      page4bands.dropdown_orientation: vertical;
     }
   }
 
@@ -44,7 +44,7 @@ template $ColorCodeWindow : Adw.ApplicationWindow {
         icon-name: "edit-copy-symbolic";
         use-underline: true;
 
-        child: $Page4Bands {};
+        child: $Page4Bands page4bands{};
       }
 
       Adw.ViewStackPage page2 {

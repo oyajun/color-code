@@ -28,6 +28,8 @@ from .drop_down_tolerance import DropDownTolerance
 class Page4Bands(Gtk.Box):
     __gtype_name__ = 'Page4Bands'
 
+    drop_down_box = Gtk.Template.Child()
+
     drop_down_1 = Gtk.Template.Child()
     drop_down_2 = Gtk.Template.Child()
     drop_down_3 = Gtk.Template.Child()
@@ -38,6 +40,8 @@ class Page4Bands(Gtk.Box):
     copy_button = Gtk.Template.Child()
 
     clipboard = Gdk.Display.get_default().get_clipboard()
+
+    dropdown_orientation = GObject.Property(type=Gtk.Orientation, default=Gtk.Orientation.HORIZONTAL)
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
@@ -56,6 +60,11 @@ class Page4Bands(Gtk.Box):
         self.calculate()
 
         self.copy_button.connect('clicked', self.copy_text)
+
+        self.connect('notify::dropdown-orientation', self.on_orientation_changed)
+
+    def on_orientation_changed(self, widget, pspec):
+        self.drop_down_box.set_orientation(self.dropdown_orientation)
 
     def copy_text(self, _button):
         self.clipboard.set(self.result_label.get_label())
