@@ -27,7 +27,17 @@
     <screenshot type="default">
       <image>
         https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot1.png</image>
-      <caption>The screenshot of "Color Code"</caption>
+      <caption>4 Bands</caption>
+    </screenshot>
+        <screenshot>
+      <image>
+        https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot2.png</image>
+      <caption>5 Bands</caption>
+    </screenshot>
+        <screenshot>
+      <image>
+        https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot3.png</image>
+      <caption>6 Bands</caption>
     </screenshot>
   </screenshots>
   <releases>
