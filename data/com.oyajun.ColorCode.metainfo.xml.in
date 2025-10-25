@@ -39,6 +39,11 @@
         https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot3.png</image>
       <caption>6 Bands</caption>
     </screenshot>
+    <screenshot>
+      <image>
+        https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot4.png</image>
+      <caption>A narrow window</caption>
+    </screenshot>
   </screenshots>
   <releases>
     <release version="0.1.5" date="2025-03-27">

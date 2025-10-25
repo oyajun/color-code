@@ -11,3 +11,4 @@ Written with GTK 4 (Python), Libadwaita and Blueprint.
 ![image](https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot1.png)
 ![image](https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot2.png)
 ![image](https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot3.png)
+![image](https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot4.png)
