@@ -7,6 +7,11 @@
       Can't you understand Color Code? This app converts to the resistance value from the color
       code.
     </p>
+    <ul>
+      <li>Supports 4, 5 and 6 bands</li>
+      <li>Can copy a results</li>
+      <li>Supports a narrow window</li>
+    </ul>
   </description>
   <branding>
     <color type="primary" scheme_preference="light">#edd400</color>
@@ -82,3 +87,4 @@
   <project_license>GPL-3.0-or-later</project_license>
   <content_rating type="oars-1.1" />
 </component>
+
