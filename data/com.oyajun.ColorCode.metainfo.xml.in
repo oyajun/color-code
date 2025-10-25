@@ -7,6 +7,11 @@
       Can't you understand Color Code? This app converts to the resistance value from the color
       code.
     </p>
+    <ul>
+      <li>Supports 4, 5 and 6 bands</li>
+      <li>Can copy a results</li>
+      <li>Supports a narrow window</li>
+    </ul>
   </description>
   <branding>
     <color type="primary" scheme_preference="light">#edd400</color>
@@ -22,7 +27,22 @@
     <screenshot type="default">
       <image>
         https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot1.png</image>
-      <caption>The screenshot of "Color Code"</caption>
+      <caption>4 Bands</caption>
+    </screenshot>
+        <screenshot>
+      <image>
+        https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot2.png</image>
+      <caption>5 Bands</caption>
+    </screenshot>
+        <screenshot>
+      <image>
+        https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot3.png</image>
+      <caption>6 Bands</caption>
+    </screenshot>
+    <screenshot>
+      <image>
+        https://raw.githubusercontent.com/oyajun/color-code/main/data/screenshots/screenshot4.png</image>
+      <caption>A narrow window</caption>
     </screenshot>
   </screenshots>
   <releases>
@@ -81,4 +101,13 @@
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0-or-later</project_license>
   <content_rating type="oars-1.1" />
+  <requires>
+    <display_length compare="ge">428</display_length>
+  </requires>
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+    <control>touch</control>
+</recommends>
 </component>
+
