@@ -46,6 +46,17 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.2.0" date="2025-10-25">
+      <description translate="no">
+        <p>The First Big Update</p>
+        <ul>
+          <li>Add 5 and 6 color code bands supports!!</li>
+          <li>Add yellow and gray bands for tolerances</li>
+          <li>Update Japanese and Spanish translations</li>
+          <li>Update to the GNOME 49 Runtime</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.1.5" date="2025-03-27">
       <description translate="no">
         <p>This is the miner release</p>
