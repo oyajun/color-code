@@ -55,7 +55,7 @@ class Page4Bands(Gtk.Box):
         self.drop_down_1.set_selected(1)
         self.drop_down_2.set_selected(0)
         self.drop_down_3.set_selected(2)
-        self.drop_down_4.set_selected(6)
+        self.drop_down_4.set_selected(8)
 
         self.calculate()
 
