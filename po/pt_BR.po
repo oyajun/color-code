@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-25 00:34+0900\n"
+"POT-Creation-Date: 2025-10-25 17:44+0900\n"
 "PO-Revision-Date: 2024-08-04 21:15+0900\n"
 "Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
 "Language-Team: Brazilian Portuguese <ldpbr-"
@@ -38,9 +38,33 @@ msgstr ""
 "Você não consegue entender o código de cores? Este aplicativo se converte ao "
 "valor de resistência do código de cores."
 
-#: data/com.oyajun.ColorCode.metainfo.xml.in:25
-msgid "The screenshot of \"Color Code\""
-msgstr "A captura de tela do \"código de cores\""
+#: data/com.oyajun.ColorCode.metainfo.xml.in:11
+msgid "Supports 4, 5 and 6 bands"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:12
+msgid "Can copy a results"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:13
+msgid "Supports a narrow window"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:30
+msgid "4 Bands"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:35
+msgid "5 Bands"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:40
+msgid "6 Bands"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:45
+msgid "A narrow window"
+msgstr ""
 
 #. Tranlator Credits: Add your name.
 #. Example)
@@ -147,6 +171,9 @@ msgstr "_Atalhos de Teclado"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr ""
+
+#~ msgid "The screenshot of \"Color Code\""
+#~ msgstr "A captura de tela do \"código de cores\""
 
 #~ msgid "Calculate resistance from color codes"
 #~ msgstr "Calcule a resistência apartir de código de cores"
