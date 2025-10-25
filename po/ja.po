@@ -1,13 +1,13 @@
-# Japanese translations for PACKAGE package.
-# Copyright (C) 2024 THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
-# oyajun <oyamadajun@outlook.jp>, 2024.
+# Japanese translations for Color Code package.
+# Copyright (C) 2024-2025 Color Code
+# This file is distributed under the same license as the Color Code package.
+# oyajun <oyamadajun@outlook.jp>, 2024-2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-25 00:34+0900\n"
+"POT-Creation-Date: 2025-10-25 17:44+0900\n"
 "PO-Revision-Date: 2024-08-04 20:44+0900\n"
 "Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
 "Language-Team: Japanese <translation-team-ja@lists.sourceforge.net>\n"
@@ -35,9 +35,33 @@ msgstr ""
 "抵抗のカラーコードが読めませんか？このアプリでカラーコードから抵抗値を計算し"
 "ましょう。"
 
-#: data/com.oyajun.ColorCode.metainfo.xml.in:25
-msgid "The screenshot of \"Color Code\""
-msgstr "\"カラーコード\"のスクリーンショット"
+#: data/com.oyajun.ColorCode.metainfo.xml.in:11
+msgid "Supports 4, 5 and 6 bands"
+msgstr "4、5、6本線のカラーコードに対応"
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:12
+msgid "Can copy a results"
+msgstr "結果をクリップボードにコピー可能"
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:13
+msgid "Supports a narrow window"
+msgstr "幅の狭いウィンドウにも対応"
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:30
+msgid "4 Bands"
+msgstr "4本線"
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:35
+msgid "5 Bands"
+msgstr "5本線"
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:40
+msgid "6 Bands"
+msgstr "6本線"
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:45
+msgid "A narrow window"
+msgstr "幅の狭いウィンドウ"
 
 #. Tranlator Credits: Add your name.
 #. Example)
@@ -53,15 +77,15 @@ msgstr "メニュー"
 
 #: src/window.blp:45
 msgid "_4 Bands"
-msgstr ""
+msgstr "_4本線"
 
 #: src/window.blp:54
 msgid "_5 Bands"
-msgstr ""
+msgstr "_5本線"
 
 #: src/window.blp:63
 msgid "_6 Bands"
-msgstr ""
+msgstr "_6本線"
 
 #: src/window.blp:82
 msgid "_Keyboard Shortcuts"
@@ -130,15 +154,17 @@ msgstr "コピー"
 #: src/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "全般"
 
 #: src/gtk/help-overlay.blp:14
-#, fuzzy
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "キーボードショートカット(_K)"
+msgstr "ショートカットを表示"
 
 #: src/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "アプリを終了"
+
+#~ msgid "The screenshot of \"Color Code\""
+#~ msgstr "\"カラーコード\"のスクリーンショット"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-25 00:34+0900\n"
+"POT-Creation-Date: 2025-10-25 17:49+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,8 +32,32 @@ msgid ""
 "from the color code."
 msgstr ""
 
-#: data/com.oyajun.ColorCode.metainfo.xml.in:25
-msgid "The screenshot of \"Color Code\""
+#: data/com.oyajun.ColorCode.metainfo.xml.in:11
+msgid "Supports 4, 5 and 6 bands"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:12
+msgid "Can copy a results"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:13
+msgid "Supports a narrow window"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:30
+msgid "4 Bands"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:35
+msgid "5 Bands"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:40
+msgid "6 Bands"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:45
+msgid "A narrow window"
 msgstr ""
 
 #. Tranlator Credits: Add your name.

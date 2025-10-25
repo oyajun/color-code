@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: color-code\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-25 00:34+0900\n"
+"POT-Creation-Date: 2025-10-25 17:44+0900\n"
 "PO-Revision-Date: 2024-08-04 21:17+0900\n"
 "Last-Translator: 小山田 純 <oyamadajun@outlook.jp>\n"
 "Language-Team: Bulgarian <dict-notifications@fsa-bg.org>\n"
@@ -36,9 +36,33 @@ msgstr ""
 "Разбирате ли цветният код на резисторите? Това приложение преобразува "
 "стойността на съпротивлението от цветния код."
 
-#: data/com.oyajun.ColorCode.metainfo.xml.in:25
-msgid "The screenshot of \"Color Code\""
-msgstr "Снимка на екрана от „Цветен Код“"
+#: data/com.oyajun.ColorCode.metainfo.xml.in:11
+msgid "Supports 4, 5 and 6 bands"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:12
+msgid "Can copy a results"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:13
+msgid "Supports a narrow window"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:30
+msgid "4 Bands"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:35
+msgid "5 Bands"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:40
+msgid "6 Bands"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:45
+msgid "A narrow window"
+msgstr ""
 
 #. Tranlator Credits: Add your name.
 #. Example)
@@ -143,6 +167,9 @@ msgstr "_Клавишни комбинации"
 msgctxt "shortcut window"
 msgid "Quit"
 msgstr ""
+
+#~ msgid "The screenshot of \"Color Code\""
+#~ msgstr "Снимка на екрана от „Цветен Код“"
 
 #~ msgid "oyajun"
 #~ msgstr "oyajun"
