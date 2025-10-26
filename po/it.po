@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# ALBANO BATTISTELLA <ALBANOBATTISTELLA@GMAIL.COM>, 2024.
+# ALBANO BATTISTELLA <ALBANOBATTISTELLA@GMAIL.COM>, 2024,2025.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-25 17:44+0900\n"
-"PO-Revision-Date: 2024-08-04 16:24+0100\n"
+"PO-Revision-Date: 2025-10-26 10:24+0200\n"
 "Last-Translator: Albano Battistella <albanobattistella@gmail.com>\n"
 "Language-Team: Italian <LL@li.org>\n"
 "Language: it\n"
@@ -35,31 +35,31 @@ msgstr ""
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:11
 msgid "Supports 4, 5 and 6 bands"
-msgstr ""
+msgstr "Supporta le bande 4, 5 e 6"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:12
 msgid "Can copy a results"
-msgstr ""
+msgstr "È possibile copiare i risultati"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:13
 msgid "Supports a narrow window"
-msgstr ""
+msgstr "Supporta una finestra stretta"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:30
 msgid "4 Bands"
-msgstr ""
+msgstr "4 bande"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:35
 msgid "5 Bands"
-msgstr ""
+msgstr "5 bande"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:40
 msgid "6 Bands"
-msgstr ""
+msgstr "6 bande"
 
 #: data/com.oyajun.ColorCode.metainfo.xml.in:45
 msgid "A narrow window"
-msgstr ""
+msgstr "Una finestra stretta"
 
 #. Tranlator Credits: Add your name.
 #. Example)
@@ -75,15 +75,15 @@ msgstr "Menù"
 
 #: src/window.blp:45
 msgid "_4 Bands"
-msgstr ""
+msgstr "_4 Bande"
 
 #: src/window.blp:54
 msgid "_5 Bands"
-msgstr ""
+msgstr "_5 Bande"
 
 #: src/window.blp:63
 msgid "_6 Bands"
-msgstr ""
+msgstr "_6 Bande"
 
 #: src/window.blp:82
 msgid "_Keyboard Shortcuts"
@@ -152,18 +152,17 @@ msgstr "Copia"
 #: src/gtk/help-overlay.blp:11
 msgctxt "shortcut window"
 msgid "General"
-msgstr ""
+msgstr "Generale"
 
 #: src/gtk/help-overlay.blp:14
-#, fuzzy
 msgctxt "shortcut window"
 msgid "Show Shortcuts"
-msgstr "_Scorciatoie da tastiera"
+msgstr "Mostra scorciatoie"
 
 #: src/gtk/help-overlay.blp:19
 msgctxt "shortcut window"
 msgid "Quit"
-msgstr ""
+msgstr "Esci"
 
 #~ msgid "The screenshot of \"Color Code\""
 #~ msgstr "Lo screenshot di \"Color Code\""
