@@ -46,6 +46,14 @@
     </screenshot>
   </screenshots>
   <releases>
+    <release version="0.2.1" date="2025-10-29">
+      <description translate="no">
+        <p>This is the miner release</p>
+        <ul>
+          <li>Update Italiano and Brazilian Portuguese translations</li>
+        </ul>
+      </description>
+    </release>
     <release version="0.2.0" date="2025-10-25">
       <description translate="no">
         <p>The First Big Update</p>
@@ -121,4 +129,5 @@
     <control>touch</control>
 </recommends>
 </component>
+
 

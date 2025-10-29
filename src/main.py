@@ -55,7 +55,7 @@ class ColorCodeApplication(Adw.Application):
                                 application_name= _('Color Code'),
                                 application_icon='com.oyajun.ColorCode',
                                 developer_name='oyajun',
-                                version='0.2.0',
+                                version='0.2.1',
                                 developers=['oyajun','Alex K','FineFindus','Mr-TBNR-BliTzz'],
                                 license_type=Gtk.License.GPL_3_0,
 
