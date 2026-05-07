@@ -1,0 +1,166 @@
+# French translations for Color Code package.
+# Copyright (C) 2024-2026 Color Code
+# This file is distributed under the same license as the Color Code package.
+# Mimolet <themimolet@proton.me>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: color-code\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-25 17:49+0900\n"
+"PO-Revision-Date: 2026-01-13 11:34+0100\n"
+"Last-Translator: Mimolet <themimolet@proton.me>\n"
+"Language-Team: French\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Gtranslator 49.0\n"
+
+#: data/com.oyajun.ColorCode.desktop.in:2
+#: data/com.oyajun.ColorCode.metainfo.xml.in:3 src/main.py:55 src/window.blp:9
+msgid "Color Code"
+msgstr ""
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:4
+msgid "Color Code to Resistance Value"
+msgstr "Convertit le code couleurs en valeurs de résistance"
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:6
+msgid ""
+"Can't you understand Color Code? This app converts to the resistance value "
+"from the color code."
+msgstr ""
+"Vous ne comprenez pas le code couleur ? Cette application convertit la "
+"valeur de résistance à partir du code couleur."
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:11
+msgid "Supports 4, 5 and 6 bands"
+msgstr "Prend en charge les résistances de 4 à 6 bandes"
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:12
+msgid "Can copy a results"
+msgstr "Peut copier le résultat"
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:13
+msgid "Supports a narrow window"
+msgstr "Compatible avec les petites fenêtres"
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:30
+msgid "4 Bands"
+msgstr "4 Bandes"
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:35
+msgid "5 Bands"
+msgstr "5 Bandes"
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:40
+msgid "6 Bands"
+msgstr "6 Bandes"
+
+#: data/com.oyajun.ColorCode.metainfo.xml.in:45
+msgid "A narrow window"
+msgstr "Une petite fenêtre"
+
+#. Tranlator Credits: Add your name.
+#. Example)
+#. oyajun <jun@example.com>\n
+#. joe <joe@example.com>
+#: src/main.py:66
+msgid "translator_credits"
+msgstr "Mimolet <themimolet@proton.me>"
+
+#: src/window.blp:35
+msgid "Menu"
+msgstr "Menu"
+
+#: src/window.blp:45
+msgid "_4 Bands"
+msgstr "_4 Bandes"
+
+#: src/window.blp:54
+msgid "_5 Bands"
+msgstr "_5 Bandes"
+
+#: src/window.blp:63
+msgid "_6 Bands"
+msgstr "_6 Bandes"
+
+#: src/window.blp:82
+msgid "_Keyboard Shortcuts"
+msgstr "_Raccourcis clavier"
+
+#: src/window.blp:86
+msgid "_About Color Code"
+msgstr "_À propos"
+
+#: src/colors.py:3
+msgid "⬛ Black"
+msgstr "⬛ Noir"
+
+#: src/colors.py:4
+msgid "🟫 Brown"
+msgstr "🟫 Brun"
+
+#: src/colors.py:5
+msgid "🟥 Red"
+msgstr "🟥 Rouge"
+
+#: src/colors.py:6
+msgid "🟧 Orange"
+msgstr "🟧 Orange"
+
+#: src/colors.py:7
+msgid "🟨 Yellow"
+msgstr "🟨 Jaune"
+
+#: src/colors.py:8
+msgid "🟩 Green"
+msgstr "🟩 Vert"
+
+#: src/colors.py:9
+msgid "🟦 Blue"
+msgstr "🟦 Bleu"
+
+#: src/colors.py:10
+msgid "🟪 Violet"
+msgstr "🟪 Violet"
+
+#: src/colors.py:11
+msgid "🩶 Gray"
+msgstr "🩶 Gris"
+
+#: src/colors.py:12
+msgid "⬜ White"
+msgstr "⬜ Blanc"
+
+#: src/colors.py:13
+msgid "🥇 Gold"
+msgstr "🥇 Or"
+
+#: src/colors.py:14
+msgid "🥈 Silver"
+msgstr "🥈 Argent"
+
+#: src/colors.py:15
+msgid "🩷 Pink"
+msgstr "🩷 Rose"
+
+#: src/page_4_bands.blp:26 src/page_5_bands.blp:23 src/page_6_bands.blp:23
+msgid "Copy"
+msgstr "Copier"
+
+#: src/gtk/help-overlay.blp:11
+msgctxt "shortcut window"
+msgid "General"
+msgstr "Général"
+
+#: src/gtk/help-overlay.blp:14
+msgctxt "shortcut window"
+msgid "Show Shortcuts"
+msgstr "Montrer les raccourcis"
+
+#: src/gtk/help-overlay.blp:19
+msgctxt "shortcut window"
+msgid "Quit"
+msgstr "Fermer la fenêtre"
